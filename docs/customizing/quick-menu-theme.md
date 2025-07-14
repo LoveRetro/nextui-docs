@@ -19,6 +19,7 @@ SD_CARD
 │  ├─ quick_Recents.png  		       *Recently Played List background
 │  ├─ quick_Pak Store.png		       *Pak Store background
 │  ├─ quick.png				       *Generic fallback background for all slots
+```
 
 ### Additional Customization notes
 
