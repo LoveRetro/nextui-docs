@@ -5,25 +5,6 @@
 
 NextUI looks for accompanying media for each emulator under the `/Overlays/[System]` folder.
 The `System` corresponds to the name of the Emu Pak specified in your Emulator folder name within parenthesis.
-In this folder you can add 5 overlay PNG files, named overlay1.png to overlay5.png.
+In this folder you can add as many overlay PNGs as you want!
 
-For example:
-
-```
-# For /Roms/Game Boy Advance (GBA)
-/Overlays/GBA/overlay1.png
-/Overlays/GBA/overlay2.png
-/Overlays/GBA/overlay3.png
-/Overlays/GBA/overlay4.png
-/Overlays/GBA/overlay5.png
-
-# For /Roms/Super Nintendo Entertainment System (SFC)
-/Overlays/SFC/overlay1.png
-/Overlays/SFC/overlay2.png
-/Overlays/SFC/overlay3.png
-/Overlays/SFC/overlay4.png
-/Overlays/SFC/overlay5.png
-```
-
-When in game, hit the `Menu` button and navigate to `Options -> Frontend`. This will display
-an overlay setting to choose between overlay 1 to 5 or none.
+When in game, hit the `Menu` button and navigate to `Options -> Frontend`. Scroll to the `Overlay` setting and pick from the ones you added to the corresponding system's folder.
