@@ -35,11 +35,11 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - Much lower latency (average 20ms, 1 frame of 60fps)
 - Shaders!
 - Fully OpenGL/GPU based for faster performance!
-- Native WiFi support
+- Native WiFi and Bluetooth support
 - Game art/media support
-- Game time tracker!
+- Game time tracker
 - Cheats support
-- Overlays support!
+- Overlays support
 - Broader zip file support (BZ2, LZMA)
 - Dynamic CPU speed scaling (keeps your device cool and extends battery life, but gives the performance right when
   needed)
@@ -52,6 +52,7 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - Ambient LED mode—the LEDS act like ambient light TVs for extra immersion. Configurable per emulator
 - Display controls (color temperature, brightness, contrast, saturation, exposure)
 - Configurable FN/Mute switch that can trigger a "night mode"—toggle between two sets of custom display settings!
+- Dpad/Analog stick/Turbo toggle via FN switch
 - Support for automatic NTP time synchronization with timezones and realtime clock (RTC)
 - Deep Sleep mode, gives instant ON and avoids the overheat bug on the Brick
   by [@zhaofengli](https://github.com/zhaofengli)
@@ -61,7 +62,7 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - Updated and optimized build emulation cores
 - Rumble strength fixed and is now variable as used by the games
 - FBNeo arcade screen rotation
-- PAL mode
+- PAL mode support
 - Next font supports CJK for JP/CN/etc. ROM names
 - Lot of other smaller fixes and optimizations
 
@@ -70,7 +71,6 @@ It features a rebuilt emulation engine and tons of added features outlined below
 # Future Plans
 
 - [ ] RetroAchievements
-- [ ] Bluetooth integrated
 - [ ] Configurable function buttons
 - [ ] More compatibility testing with different emulators and fix / improve if necessary
 
