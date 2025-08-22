@@ -1,6 +1,7 @@
 It is strongly advised that you build NextUI via Docker instead of using a direct build.  By using Docker, you significantly
 reduce the number of differences between your system and the system that developers are building on which reduces issues
-where the system builds fine for one person while failing for another.
+where the system builds fine for one person while failing for another. If you need any help, please use this setup - otherwise
+you are on your own.
 
 ## System requirements
 - Linux Operating System capable of running docker
