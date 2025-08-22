@@ -88,5 +88,6 @@ nav:
       - shaders/index.md
   - Support:
       - Frequently Asked Questions: support/faq.md
+  - Development: development/build.md
   - NextUI Homepage:
       - index.md
