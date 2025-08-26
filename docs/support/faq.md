@@ -17,6 +17,17 @@ Already a NextUI user? Follow our [updating guide](../usage.md#updating-an-exist
 
 ---
 
+## I am currently using classic MinUI, how can I migrate?
+
+Since MinUI and NextUI share a lot of DNA, you can just install NextUI over an existing MinUI installation.
+
+There is no need to format your exising card, just follow the [installation guide](../usage.md#installation-instructions)
+from step 3, using the `all.zip` archive from the latest NextUI release. 
+
+!!! note "While this is a pretty straightforward process, it never hurts to have a backup of your savegames.
+
+---
+
 ## What Systems are Supported?
 
 ### Included in the Base CFW
