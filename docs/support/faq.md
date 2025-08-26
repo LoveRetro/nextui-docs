@@ -24,7 +24,7 @@ Since MinUI and NextUI share a lot of DNA, you can just install NextUI over an e
 There is no need to format your exising card, just follow the [installation guide](../usage.md#installation-instructions)
 from step 3, using the `all.zip` archive from the latest NextUI release. 
 
-!!! note "While this is a pretty straightforward process, it never hurts to have a backup of your savegames.
+!!! note "While this is a pretty straightforward process, it never hurts to have a backup of your savegames."
 
 ---
 
