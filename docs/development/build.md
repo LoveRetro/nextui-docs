@@ -6,6 +6,7 @@ you are on your own.
 ## System requirements
 - Linux Operating System capable of running docker
 - At least 10 GB of available disk space
+- For now, a arm64 host system is required.
 
 ## Step 1: Install development-related helper tools
 ```shell
