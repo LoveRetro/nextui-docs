@@ -54,11 +54,6 @@ against a remote Syncthing server
 
 ---
 
-### Theming
-[NextUI-Themes](https://github.com/Leviathanium/NextUI-Themes)—for all theming needs, with import/export functionality and predefined themes
-
----
-
 ### Miscellaneous
 
 [Simple Mode](https://github.com/josegonzalez/minui-simple-mode-pak/)—a Pak for managing simple mode
