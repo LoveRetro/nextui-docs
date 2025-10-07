@@ -6,6 +6,8 @@
 
 {% include "customizing/theming/emulator-icons.md" %}
 
+{% include "customizing/theming/custom-boot-logo.md" %}
+
 {% include "customizing/game-artwork.md" %}
 
 {% include "customizing/custom-categories.md" %}
