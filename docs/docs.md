@@ -36,6 +36,7 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - Shaders!
 - Fully OpenGL/GPU based for faster performance!
 - Native WiFi and Bluetooth support
+- System-wide support for USB-C DACs via OTG port
 - Game art/media support
 - Game time tracker
 - Cheats support
