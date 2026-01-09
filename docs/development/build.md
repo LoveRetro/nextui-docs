@@ -24,7 +24,7 @@ After that, you can build a partial NextUI flavour that works on your host machi
 ```shell
 make setup common PLATFORM=desktop
 ```
-The main repo contains a few templated (launch configs for VS Code)[https://github.com/LoveRetro/NextUI/blob/main/.vscode/launch.json] that you can modify and extend to fit your needs.
+The main repo contains a few templated [launch configs for VS Code](https://github.com/LoveRetro/NextUI/blob/main/.vscode/launch.json) that you can modify and extend to fit your needs.
 
 ### Building on macOS
 NextUI is build using gcc. In order for you to develop on macOS, you will have to take some extra steps:
