@@ -13,6 +13,17 @@ you are on your own.
 sudo apt-get install build-essential zip zipmerge
 ```
 
+### Optional: Install native library dependencies for `desktop` target
+Some parts of the development process are easier when you can build a target for your host instead of a handheld device. If you want to use the `desktop` platform target, you need to install additional dependencies (to match what would be present on the handheld device):
+```shell
+sudo apt-get install libsqlite3-dev libzip-dev libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
+```
+After that, you can build a partial NextUI flavour that works on your host machine:
+```shell
+make setup common PLATFORM=desktop
+```
+The main repo contains a few templated (launch configs for VS Code)[https://github.com/LoveRetro/NextUI/blob/main/.vscode/launch.json] that you can modify and extend to fit your needs.
+
 ## Step 2: Install Docker
 
 | Docker Version | Instructions |
