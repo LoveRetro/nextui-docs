@@ -6,7 +6,7 @@
 1. Insert the micro SD card into your computer.
 2. Ensure that the SD card is formatted as a FAT32 or exFAT filesystem, and using the "Master Boot Record" partition scheme.
     - If not, use the specified tools in [What you will need](#what-you-will-need) to format the card as FAT32/exFAT.
-    - Double check you selected "Mater Boot Record (MBR)" partition scheme option, otherwise your card will not boot correctly.
+    - Double check you selected "Master Boot Record (MBR)" partition scheme option, otherwise your card will not boot correctly.
 3. Find and unzip the file you downloaded from the [GitHub Releases Page]({{ urls.github}}/releases) (`all.zip` or `base.zip`).
 4. Open the unzipped directory and copy all content to the root of your SD card.
 5. Eject your SD card safely from your computer and insert it back into your device.
