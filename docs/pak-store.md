@@ -10,7 +10,7 @@ NextUI allows you to add functionality to the system in the form of Paks.
 
 The NextUI Community has created these amazing paks which are available to download right on your device through the Pak Store.
 
-Simply connect to Wi-Fi, select Pak Store from the tools menu and try out these paks.
+Simply connect to Wi-Fi, select Pak Store from the tools menu and try them out!
 
 Interested in making a pak? Community member Jose Diaz-Gonzalez has put together a [fantastic guide](https://josediazgonzalez.com/2025/06/16/writing-a-pak-for-the-minui-and-nextui-launchers/).
 
