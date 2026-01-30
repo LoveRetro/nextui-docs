@@ -2,10 +2,4 @@
 
 NextUI allows you to add functionality to the system in the form of Paks.
 
-These Paks can range from tools to additional emulators.
-
-{% include "paks/community-favorites.md" %}
-
-{% include "paks/standalone-emulators.md" %}
-
-{% include "paks/making-a-pak.md" %}
+The NextUI Community can submit their paks to be included in the NextUI Pak Store which comes preinstalled.

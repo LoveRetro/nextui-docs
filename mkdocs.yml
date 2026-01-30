@@ -83,7 +83,7 @@ nav:
   - Docs Home: docs.md
   - Usage: usage.md
   - Customizing: customizing.md
-  - Paks: paks.md
+  - Paks: pak-store.md
   - Shaders:
       - shaders/index.md
   - Support:
