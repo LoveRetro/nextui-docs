@@ -335,6 +335,12 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
             <button class="pak-filter-btn active" data-filter="category" data-value="all">All</button>
         </div>
     </div>
+    <div class="pak-filters" id="pak-platform-filters">
+        <div class="pak-filter-group">
+            <span class="pak-filter-label">Platform:</span>
+            <button class="pak-filter-btn active" data-filter="platform" data-value="all">All</button>
+        </div>
+    </div>
     <div class="pak-stats">
         <span>Total: <span class="pak-stat-value" id="pak-total">-</span></span>
         <span>Showing: <span class="pak-stat-value" id="pak-showing">-</span></span>
@@ -351,7 +357,7 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
     const SUPPORTED_PLATFORMS = ['tg5040', 'tg5050'];
 
     let allPaks = [];
-    let currentFilters = { type: 'all', category: 'all', search: '' };
+    let currentFilters = { type: 'all', category: 'all', platform: 'all', search: '' };
 
     function isOfficial(pak) {
         return OFFICIAL_PAKS.includes(pak.storefront_name || pak.name || '');
@@ -385,6 +391,7 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
             if (!hasSupportedPlatform(pak)) return false;
             if (currentFilters.type !== 'all' && pak.type !== currentFilters.type) return false;
             if (currentFilters.category !== 'all' && (!pak.categories || !pak.categories.includes(currentFilters.category))) return false;
+            if (currentFilters.platform !== 'all' && (!pak.platforms || !pak.platforms.some(p => p.toLowerCase() === currentFilters.platform.toLowerCase()))) return false;
             if (currentFilters.search) {
                 const s = currentFilters.search.toLowerCase();
                 const nameMatch = (pak.storefront_name || pak.name || '').toLowerCase().includes(s);
@@ -488,6 +495,16 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
             btn.dataset.value = cat;
             btn.textContent = cat;
             catContainer.appendChild(btn);
+        });
+
+        const platformContainer = document.querySelector('#pak-platform-filters .pak-filter-group');
+        SUPPORTED_PLATFORMS.forEach(platform => {
+            const btn = document.createElement('button');
+            btn.className = 'pak-filter-btn';
+            btn.dataset.filter = 'platform';
+            btn.dataset.value = platform;
+            btn.textContent = platform.toUpperCase();
+            platformContainer.appendChild(btn);
         });
 
         setupFilters();
