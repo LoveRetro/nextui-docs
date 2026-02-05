@@ -2,9 +2,13 @@
 
 !!! warning "Read before continuing!"
 
-    NextUI **officially supports** the TrimUI Brick and the TrimUI Smart Pro.
+    NextUI **officially supports** the TrimUI Brick, Smart Pro and Smart Pro S.
 
     The steps outlined here only apply to these two devices running the stock operating system.
+
+    If you are planning to install NextUI after using a different custom firmware on your device, 
+    we recommend to first reinstall the TrimUI stock OS to revert any changes that might have been
+    made without your knowledge. The only exception is MinUI.
 
 
 
