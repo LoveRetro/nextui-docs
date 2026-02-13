@@ -23,3 +23,10 @@
 - The latest release of NextUI from the [GitHub Repo :simple-github:]({{ urls.github }}/releases).
     - At minimum, you will need the `base.zip` file.
     - If you want additional goodies, download `extras.zip` as well (or download `all.zip` to get both files in one).
+
+#### [Optional]
+
+- The community made [NextUI Setup Wizard](https://github.com/aaronhoogstraten/NextUI-Setup-Wizard) for Windows and macOS provides an easy to use interface for performing the setup of your NextUI device, including:
+    - Micro SD card formatting instructions
+    - Latest NextUI release download and installation to micro SD card
+    - ROM and BIOS setup instructions for popular systems
