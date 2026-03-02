@@ -354,7 +354,7 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
 (function() {
     const STOREFRONT_URL = 'https://raw.githubusercontent.com/LoveRetro/nextui-pak-store/refs/heads/gh-pages/storefront.json';
     const OFFICIAL_PAKS = ['Pak Store', 'Over The Air Updater'];
-    const SUPPORTED_PLATFORMS = ['tg5040', 'tg5050'];
+    const SUPPORTED_PLATFORMS = ['tg5040', 'tg5050', 'my355'];
 
     let allPaks = [];
     let currentFilters = { type: 'all', category: 'all', platform: 'all', search: '' };
