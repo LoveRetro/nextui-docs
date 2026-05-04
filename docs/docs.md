@@ -4,96 +4,77 @@
 
 # **Welcome to the NextUI Docs!**
 
-A powerful but understated CFW for TrimUI Brick & Smart Pro. [:simple-github:]({{ urls.github }})
+NextUI is a custom firmware for the Trimui Brick, Trimui Smart Pro, and Trimui Smart Pro S retro handhelds. It keeps the simple launcher style of MinUI while adding device-specific features such as Wi-Fi, game artwork, shaders, overlays, LED controls, a game switcher, game-time tracking, Paks, and RetroAchievements.
 
-[Installation Instructions](usage.md){ .md-button .md-button--primary }
+[Installation Instructions](getting-started/installation.md){ .md-button .md-button--primary }
+
+---
+
+## Start here
+
+New to NextUI? Start with these pages:
+
+- [Installation](getting-started/installation.md) for fresh SD-card setup.
+- [Updating](getting-started/updating.md) for existing cards.
+- [ROMs, BIOS, and Arcade](getting-started/roms.md) for exact folder names and file-placement rules.
+- [Troubleshooting](support/troubleshooting.md) if the device boots to stock OS, only shows Tools, or a game will not launch.
+- [Pak Store](pak-store.md) for optional tools, emulators, PortMaster, and file-transfer options.
+
+---
+
+## Supported devices
+
+NextUI currently supports:
+
+| Device | Status | Platform | Notes |
+|---|---|---|---|
+| Trimui Brick | Supported | `tg5040` | Main NextUI target. Many device-specific features were first built around this device. |
+| Trimui Smart Pro | Supported | `tg5040` | Shares the same platform and most Paks with the Brick. |
+| Trimui Smart Pro S | Supported | `tg5050` | Some community Paks may need explicit Smart Pro S support before they appear or work. |
+| Trimui Brick Hammer | Supported (same as Brick) | `tg5040` | The Brick Hammer is functionally identical to the Trimui Brick. Use the same SD card and Paks. |
+
+For other devices, check the project status before installing. Experimental ports may exist but should not be treated as supported unless they are listed here.
+
+---
+
+## What NextUI adds
+
+NextUI focuses on a fast, simple handheld experience. Features include:
+
+- rebuilt emulation engine work to reduce tearing and sync stutter;
+- low-latency audio and video behavior;
+- a game switcher menu;
+- Wi-Fi support for updates, Pak Store, RetroAchievements, and network tools;
+- game artwork and media support;
+- shaders and overlays;
+- cheat-file support for compatible libretro cores;
+- optional community Paks for extra emulators, tools, PortMaster, file transfer, and more;
+- configurable display settings, color temperature, and brightness;
+- configurable LED behavior on supported devices;
+- game-time and battery tracking;
+- RTC and NTP time synchronization;
+- deep sleep behavior designed for quick resume.
+
+---
+
+## Community Paks
+
+Paks are optional add-ons. They can add tools, extra emulators, PortMaster support, file transfer, scrapers, and other community features. Paks are powerful, but they are also platform-specific. A Pak that works on one supported device may not work on another until the Pak author adds support for that platform.
+
+See [Pak Store](pak-store.md) for installation and troubleshooting.
+
+---
+
+## Need help?
+
+Most setup issues are caused by one of these: SD-card formatting, files copied to the wrong level, missing ROMs, missing BIOS files, or using a ROM set that does not match the selected emulator.
+
+Start with [Troubleshooting](support/troubleshooting.md). If you still need help, include your device, NextUI version, SD-card format, exact folder path, exact filename, and any log files when asking in [Discord :simple-discord:]({{ urls.discord }}).
 
 ---
 
 ## About NextUI
 
-NextUI is a custom firmware (CFW) for the TrimUI Brick & Smart Pro retro gaming handhelds.
+NextUI was started by [@ro8inmorgan](https://github.com/ro8inmorgan) as a fork of the popular MinUI CFW by [@shauninman](https://github.com/shauninman/MinUI).
 
-It was started by [@ro8inmorgan](https://github.com/ro8inmorgan) as a fork of the popular MinUI CFW so they could
-implement changes that were determined to be outside the scope of the original project.
-
-NextUI quickly took off and became especially popular on the TrimUI devices.
-
----
-
-## Features
-
-NextUI officially supports the TrimUI Brick and TrimUI Smart Pro gaming handhelds.
-
-It features a rebuilt emulation engine and tons of added features outlined below.<br />
-<small>Note: For other devices we recommend checking out [MinUI](https://github.com/shauninman/MinUI).</small>
-
-- Fixed both screen tearing and sync stutter problems of MinUI by rebuilding the emulator engine core
-- Game switcher menu (OnionOS style) by [@frysee](https://github.com/frysee)
-- High quality audio, due to advanced resampling engine
-  using [libsamplerate](https://github.com/libsndfile/libsamplerate) (with quality/performance setting per emulator)
-- Much lower latency (average 20ms, 1 frame of 60fps)
-- Shaders!
-- Fully OpenGL/GPU based for faster performance!
-- Native WiFi and Bluetooth support
-- System-wide support for USB-C DACs via OTG port
-- Game art/media support
-- Game time tracker
-- Cheats support
-- Overlays support
-- Broader zip file support (BZ2, LZMA)
-- Dynamic CPU speed scaling (keeps your device cool and extends battery life, but gives the performance right when
-  needed)
-- Custom bootlogos contributed by [@SolvalouArt](https://bsky.app/profile/solvalouart.bsky.social)
-- Color and font settings to customize the NextUI interface
-- Menu animations
-- LED control, change colors, effects, brightness
-- LED indicators, low battery, stand by, charging (brightness can be set seperately)
-- Haptic feedback in the menu by [@ExonakiDev](https://github.com/exonakidev)
-- Ambient LED mode—the LEDS act like ambient light TVs for extra immersion. Configurable per emulator
-- Display controls (color temperature, brightness, contrast, saturation, exposure)
-- Configurable FN/Mute switch that can trigger a "night mode"—toggle between two sets of custom display settings!
-- Dpad/Analog stick/Turbo toggle via FN switch
-- Support for automatic NTP time synchronization with timezones and realtime clock (RTC)
-- Deep Sleep mode, gives instant ON and avoids the overheat bug on the Brick
-  by [@zhaofengli](https://github.com/zhaofengli)
-- Customizable screen and sleep timeout (Including "Never")
-- Battery monitoring, including history graph and time left prediction
-- Scrolling animated titles for longer game names
-- Updated and optimized build emulation cores
-- Rumble strength fixed and is now variable as used by the games
-- FBNeo arcade screen rotation
-- PAL mode support
-- Next font supports CJK for JP/CN/etc. ROM names
-- Lot of other smaller fixes and optimizations
-
----
-
-# Future Plans
-
-- [ ] RetroAchievements
-- [ ] Configurable function buttons
-- [ ] More compatibility testing with different emulators and fix / improve if necessary
-
----
-
-## Discord Community
-
-NextUI has a vibrant Discord community. Here you can talk about new and upcoming features, ask for help and contribute
-to the community.
-
-Many of our members produce custom Paks add to the functionality of NextUI.
-
-The more artistically inclined among us make custom emulator overlays and themes.
-
-Don't be shy, come join us! |  [:simple-discord: Discord Invite]({{ urls.discord }})
-
----
-
-## Kudos
-
-Many minds make us whole. NextUI is a product of its community.
-
-Special thanks to [@shauninman](https://github.com/shauninman) for their original work on MinUI and
-to [@ro8inmorgan](https://github.com/ro8inmorgan) and [@frysee](https://github.com/frysee) for their tireless efforts
-improving the core NextUI experience.
+Many community members have contributed Paks, overlays, themes, and support. Special thanks to [@frysee](https://github.com/frysee) for ongoing improvements.

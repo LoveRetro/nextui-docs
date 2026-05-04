@@ -4,15 +4,92 @@ hide:
   - toc
 ---
 
-# NextUI Community Paks
+# Paks and Pak Store
 
-NextUI allows you to add functionality to the system in the form of Paks.
+Paks are optional packages that add tools, emulators, ports, and utilities. Some are maintained by NextUI, and many are maintained by community members.
 
-The NextUI Community has created these amazing paks which are available to download right on your device through the Pak Store.
+A Pak that works on one device may not work on another. Pak Store may hide packages that are not marked compatible with your device. You can change compatibility filters in Pak Store settings, but installing an unverified Pak means you are testing it yourself.
 
-Simply connect to Wi-Fi, select Pak Store from the tools menu and try them out!
+## What is a Pak?
 
-Interested in making a pak? Community member Jose Diaz-Gonzalez has put together a [fantastic guide](https://josediazgonzalez.com/2025/06/16/writing-a-pak-for-the-minui-and-nextui-launchers/).
+A Pak is a folder ending in `.pak` that contains a launcher script. NextUI supports two main kinds of Paks:
+
+| Pak type | Where it appears | Where it lives on the SD card |
+|---|---|---|
+| Tool Pak | Tools menu | `Tools/<platform>/<Name>.pak/` |
+| Emulator Pak | Game system menu | `Emus/<platform>/<TAG>.pak/` |
+
+Paks are platform-specific. A Pak must support your device before it can appear or work correctly.
+
+!!! warning "Do not install custom Paks into `.system`"
+    The hidden `.system` folder is replaced during NextUI updates. Put optional Paks in the root-level `Tools/` or `Emus/` folders instead.
+
+| Device | Platform | Tool Paks | Emulator Paks |
+|---|---|---|---|
+| Trimui Brick | `tg5040` | `Tools/tg5040/` | `Emus/tg5040/` |
+| Trimui Smart Pro | `tg5040` | `Tools/tg5040/` | `Emus/tg5040/` |
+| Trimui Smart Pro S | `tg5050` | `Tools/tg5050/` | `Emus/tg5050/` |
+
+## Installing Paks from Pak Store
+
+1. Connect the device to Wi-Fi.
+2. Open `Tools`.
+3. Launch `Pak Store`.
+4. Update the store list if prompted.
+5. Use Type, Category, and Platform filters to find compatible Paks.
+6. Install the Pak.
+7. For Tool Paks, return to `Tools` and launch the tool.
+8. For Emulator Paks, add ROMs to a folder with the matching tag in `Roms/`.
+
+## Why a Pak may not appear
+
+A Pak can be missing because:
+
+- the device is not connected to Wi-Fi;
+- Pak Store has not been updated;
+- the Type/Category/Platform filters hide it;
+- the Pak does not support your device;
+- the Pak is experimental or temporarily removed.
+
+Smart Pro S users should check platform compatibility carefully. Some older Paks may only support earlier Trimui platforms.
+
+## Standalone emulator Paks
+
+Some Paks use NextUI's standard libretro/minarch integration. Those usually support standard NextUI behavior such as in-game menus, resume, quicksave, and auto-resume.
+
+Other Paks launch standalone emulators. Standalone emulator Paks may not support:
+
+- NextUI's normal in-game menu;
+- quicksave or auto-resume;
+- consistent shortcut behavior;
+- the Menu or Power button behavior users expect from built-in emulators.
+
+This is normal for some standalone Paks. Check the Pak's own notes before filing a bug.
+
+## File-transfer Paks
+
+For moving files without removing the SD card, see [File Transfer](paks/file-transfer.md).
+
+Common options include:
+
+- Web Dashboard over USB;
+- Central Scrutinizer over Wi-Fi;
+- FTP server Paks;
+- HTTP file browser Paks.
+
+## PortMaster
+
+PortMaster is handled through community Paks and has its own compatibility limits. See [PortMaster](paks/portmaster.md).
+
+## Making a Pak
+
+Interested in making a Pak? Community member Jose Diaz-Gonzalez has put together a [fantastic guide](https://josediazgonzalez.com/2025/06/16/writing-a-pak-for-the-minui-and-nextui-launchers/).
+
+See [Making Paks](paks/making-paks.md) for an overview of Pak structure and available environment variables.
+
+---
+
+## Pak Store
 
 <style>
 .pak-store-container {

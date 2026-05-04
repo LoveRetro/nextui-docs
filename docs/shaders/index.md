@@ -1,4 +1,92 @@
-# Shaders Explanation
+# Shaders
+
+## Quick reference
+
+| Task | What to do |
+|---|---|
+| Use a built-in shader | Open a game, press `Menu`, then go to `Options` → `Shaders`. |
+| Add a loose shader file | Copy the `.glsl` file to `SDCARD_ROOT/Shaders/`. |
+| Use shader parameter presets | NextUI v6.10.0 and newer can load shader parameter values from `.cfg` preset files. |
+| Use `.glsp` presets | `.glsp` preset files are not supported. Use `.cfg` presets instead. |
+
+## Where custom shaders go
+
+For simple custom shaders, place `.glsl` files in:
+
+```text
+SDCARD_ROOT/Shaders/
+```
+
+Or in the `glsl` subdirectory:
+
+```text
+SDCARD_ROOT/Shaders/glsl/
+```
+
+Then open a game and choose the shader from:
+
+```text
+Menu → Options → Shaders
+```
+
+## Shader preset `.cfg` files
+
+NextUI v6.10.0 added support for loading shader parameter values from `.cfg` preset files.
+
+A `.cfg` preset is a text file that stores shader settings and parameter values. If the preset references external `.glsl` files, those files must also be present in the expected path.
+
+Common layout:
+
+```text
+Shaders/
+├── handheld-lcd.cfg
+└── glsl/
+    └── lcd3x.glsl
+```
+
+`.cfg` preset files use `minarch_` prefixed key=value pairs. Example:
+
+```ini
+minarch_nrofshaders = 2
+minarch_shader1 = pixellate.glsl
+minarch_shader1_filter = NEAREST
+minarch_shader1_srctype = source
+minarch_shader1_scaletype = source
+minarch_shader1_upscale = screen
+minarch_shader2 = lcd3x.glsl
+minarch_shader2_filter = NEAREST
+minarch_shader2_srctype = source
+minarch_shader2_scaletype = source
+minarch_shader2_upscale = screen
+minarch_scale_filter = NEAREST
+```
+
+Available filter values: `NEAREST`, `LINEAR`
+Available srctype values: `source`, `relative`
+Available scaletype values: `source`, `relative`
+Available upscale values: integer `1`-`4`, or `screen`
+
+If a preset does not appear or does not load correctly:
+
+- confirm you are on NextUI v6.10.0 or newer;
+- confirm the referenced `.glsl` files exist;
+- check filename case;
+- try a simple loose `.glsl` first;
+- do not use `.glsp` presets; they are not supported.
+
+## Performance notes
+
+Shaders cost GPU time. If a game stutters after enabling shaders:
+
+1. Turn shaders off and test again.
+2. Reduce the number of shader passes.
+3. Use a simpler shader.
+4. Lower emulator enhancement settings.
+5. For arcade or higher-end systems, prioritize performance over heavy visual effects.
+
+---
+
+## Shader Tutorial
 
 **A Little Introduction**
 
@@ -158,7 +246,7 @@ But like I said shaders are not only used for scaling, since they are just littl
 - Distort the screen or enhance colors, etc.  
 
 **Feel free to experiment!**  
-Try different shaders, different combinations, and find the look that feels best for your games. You can download any .glsl file and place it in the `/Shaders` folder on your SD card to use it within NextUI. NextUI does not yet support .glsp shader preset files, though these are simple text files and you can open them to view the settings and replicate them in the shaders menu. 
+Try different shaders, different combinations, and find the look that feels best for your games. You can download any .glsl file and place it in the `/Shaders` folder on your SD card to use it within NextUI. For shader presets, use `.cfg` files as described in the quick reference above.
 
 **Enjoy! 🎮**
 
@@ -215,4 +303,3 @@ That means:
 ---
 
 That's it — now you’ve got a sharp, beautiful pixel grid overlay just like an old-school Game Boy screen! 🎮🖤
-

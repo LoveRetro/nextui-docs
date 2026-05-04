@@ -2,9 +2,9 @@
 
 !!! info "Device support"
 
-    NextUI's LED Controls currently only support the TrimUI Brick.
+    NextUI's LED Controls support all three supported devices: Trimui Brick, Trimui Smart Pro, and Trimui Smart Pro S.
 
-    Support for the TrimUI Smart Pro will be addressed in a future update.
+    LED zones differ by device. Use `Left Trigger` and `Right Trigger` to cycle between available LEDs in the LED Control App.
 
 !!! info "A comment on color reproduction"
 
@@ -20,11 +20,17 @@ The app provides the following options.
 
 #### LED Selection
 
-The TrimUI Brick has the following configurable LEDs.
+**Trimui Brick** has the following configurable LEDs:
 
 - Two LEDs on the front of the device for each function button (F1 & F2)
-- Two LEDs under the triggers (one under L1 & L2 the other under R1 & R2)
+- Two LEDs under the triggers (one under L1 & R2 the other under R1 & R2)
 - One LED bar on the top of the device
+
+**Trimui Smart Pro and Smart Pro S** have the following configurable LEDs:
+
+- Left stick LED
+- Right stick LED
+- TrimUI logo LED
 
 When in the LED Control App you can use `Left Trigger` and `Right Trigger` to cycle between these LEDs.
 
