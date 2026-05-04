@@ -25,7 +25,7 @@ See [Shaders](../shaders/index.md) for the correct layout.
 
 ## Smart Pro S Pak availability
 
-Smart Pro S uses the `tg5050` platform. Some community Paks may not appear in Pak Store until the Pak author adds `tg5050` support. This is a compatibility filter, not a bug.
+Some community Paks do not appear on Smart Pro S until the Pak author adds Smart Pro S support. This is a compatibility filter, not a firmware bug.
 
 ## PortMaster compatibility
 

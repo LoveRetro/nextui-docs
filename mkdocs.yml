@@ -91,6 +91,7 @@ nav:
       - Saves and Migration: getting-started/managing-saves.md
       - Cheats: getting-started/cheats.md
   - Paks:
+      - Overview: paks.md
       - Pak Store: pak-store.md
       - File Transfer: paks/file-transfer.md
       - PortMaster: paks/portmaster.md

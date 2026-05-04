@@ -29,11 +29,17 @@ Good root layout:
 
 ```text
 SDCARD_ROOT/
-├── MinUI.zip
-├── trimui/
-├── Roms/
 ├── Bios/
-└── Saves/
+├── MinUI.zip
+├── Overlays/
+├── README.txt
+├── Roms/
+├── Saves/
+├── Shaders/
+├── nextui.pak_store.pakz
+├── nextui.updater.pakz
+├── nextui.upgrade_bluez.tg5040.pakz
+└── trimui/
 ```
 
 Bad root layout:
@@ -93,7 +99,7 @@ Logs are in hidden platform folders:
 SDCARD_ROOT/.userdata/<platform>/logs/
 ```
 
-For emulator Paks, logs often use the emulator tag:
+For built-in emulator Paks, logs use the emulator tag:
 
 ```text
 .userdata/tg5040/logs/FBN.txt
@@ -130,9 +136,9 @@ Replace `X:` with the SD-card drive letter.
 
 ## A Pak is missing from Pak Store
 
-Paks are platform-specific. Use the platform filter in Pak Store. If a Pak is not listed for your device, it may not support your device yet.
+Paks are device-specific. Use the compatibility filters in Pak Store. If a Pak is not listed for your device, check the Pak's own support notes.
 
-For Smart Pro S, this is a common cause of missing or non-working Paks because older Paks may only support earlier Trimui platforms.
+For Smart Pro S, this is a common cause of missing or non-working Paks because older Paks can support only earlier TrimUI devices.
 
 ## A Pak launches and immediately exits
 

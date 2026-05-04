@@ -26,10 +26,10 @@ Important: copy `MinUI.zip` to the SD-card root as a zip file. Do not unzip `Min
 
 NextUI supports:
 
-- Trimui Brick
-- Trimui Smart Pro
-- Trimui Smart Pro S
-- Trimui Brick Hammer (same as Brick)
+- TrimUI Brick
+- TrimUI Smart Pro
+- TrimUI Smart Pro S
+- TrimUI Brick Hammer (same as Brick)
 
 Do not install builds for experimental devices unless maintainers have published instructions for that device.
 
@@ -65,15 +65,13 @@ See [Adding ROMs](../getting-started/roms.md).
 
 ## Can I use one SD card on more than one supported device?
 
-Usually, but the card still needs the correct bootstrap folder from a recent release for the other device.
-
-Back up the card, extract the latest release, and copy the release's `trimui/` folder to the SD-card root along with `MinUI.zip`.
+Yes, for supported TrimUI devices. Back up the card first, then copy the current release's `trimui/` folder and keep `MinUI.zip` at the SD-card root so the install/update hook is present for the device.
 
 ---
 
 ## Which release file should I download?
 
-Use the latest release archive ending in `-base.zip` for normal installation/update. Use `-all.zip` if you also want the extra emulator/tool folders included in the archive. After extracting the archive on your computer, copy `MinUI.zip` and the platform bootstrap folder, such as `trimui/`, to the SD-card root. Do not unzip `MinUI.zip`.
+Use the latest release archive ending in `-base.zip` for normal installation/update. Use `-all.zip` if you also want the extra emulator/tool folders included in the archive. After extracting the archive on your computer, copy `MinUI.zip` and the `trimui/` folder to the SD-card root. Do not unzip `MinUI.zip`.
 
 ---
 
@@ -156,10 +154,16 @@ In-game saves live in:
 Saves/<TAG>/
 ```
 
-Save states and quicksaves usually live in hidden folders under:
+Save-state payloads and quicksaves live in hidden folders under:
 
 ```text
 .userdata/shared/<TAG>-<core>/
+```
+
+Launcher resume metadata and preview images live under:
+
+```text
+.userdata/shared/.minui/<EMU>/
 ```
 
 Game Tracker data lives in:
@@ -174,23 +178,15 @@ See [Saves and Migration](../getting-started/managing-saves.md).
 
 ## Can I sync saves with Syncthing?
 
-Yes, but sync in-game saves first. They are safer than save states.
-
-Recommended:
-
-```text
-Saves/
-```
-
-Be careful syncing `.userdata/`, because it contains save states, settings, recents, and tracking databases that may not be portable across devices or emulator versions.
+Syncthing is a community Pak, not part of base NextUI. See [Paks](../paks.md#save-sync-paks) before syncing saves or hidden `.userdata` folders.
 
 ---
 
 ## Why is a Pak missing on Smart Pro S?
 
-Paks are platform-specific. A Pak may need explicit Smart Pro S support before it appears or works.
+Paks are device-specific. A Pak needs Smart Pro S support before it appears or works on Smart Pro S.
 
-Use the Pak Store platform filter. If the Pak is not listed for your device, it may not be compatible yet.
+Use the Pak Store compatibility filters. If the Pak is not listed for your device, check the Pak's own support notes.
 
 ---
 

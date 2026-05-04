@@ -134,7 +134,7 @@ Roms/Arcade (FBN)/
 
 ## Neo Geo with FBNeo
 
-Neo Geo games should usually be handled through FBNeo on NextUI.
+Neo Geo games should be handled through FBNeo on NextUI.
 
 Recommended layout:
 
@@ -159,7 +159,7 @@ Roms/Arcade (FBN)/
 Important notes:
 
 - `neogeo.zip` is required for many Neo Geo games.
-- For FBNeo, `neogeo.zip` often needs to live in the same ROM folder as the Neo Geo game ZIPs.
+- For FBNeo Neo Geo games, keep `neogeo.zip` in the same ROM folder as the Neo Geo game ZIPs.
 - Hide `neogeo.zip` from the menu with `map.txt` if you do not want to see it as a launchable item.
 - A folder named `Neo Geo (FBN)` is safer than relying on an older or missing `Neo Geo (NEOGEO)` folder. The current NextUI release does not include a `NEOGEO.pak`; use FBNeo instead.
 

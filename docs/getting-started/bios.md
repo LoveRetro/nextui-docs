@@ -35,7 +35,7 @@ If a game does not work, replace the BIOS with the exact expected filename and a
 
 ## Arcade and Neo Geo BIOS exception
 
-Arcade systems can be unusual. For FBNeo Neo Geo games, `neogeo.zip` may need to be in the same ROM folder as the game ZIPs, such as:
+Arcade systems can be unusual. For FBNeo Neo Geo games, keep `neogeo.zip` in the same ROM folder as the game ZIPs, such as:
 
 ```text
 Roms/Neo Geo (FBN)/neogeo.zip

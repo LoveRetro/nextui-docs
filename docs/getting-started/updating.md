@@ -19,36 +19,10 @@
 9. Insert the card into your device.
 10. Power on the device.
 11. Wait while the NextUI update screen runs. Do not power off the device during the update.
-12. The device may shut down when the update completes. Power it on again.
-
-## What is safe to keep?
-
-These folders normally contain your personal data and should be kept when updating:
-
-```text
-Roms/
-Bios/
-Saves/
-Collections/
-Overlays/
-Shaders/
-Tools/            # if you installed custom Tool Paks
-Emus/             # if you installed custom Emulator Paks
-Cheats/
-.userdata/
-.media folders inside Roms/
-```
-
-Copying an empty folder from the release over an existing folder should not remove existing files, but a full backup is still the safest option.
-
-## Custom files that updates may replace
-
-The hidden `.system/` folder is replaced during updates. Do not store custom Paks or user files in `.system/`.
-
-Put optional Paks in root-level `Tools/` or `Emus/` platform folders instead.
+12. When the update completes, the device can shut down. Power it on again.
 
 ## Updating a card used on another supported device
 
-If you move the same SD card to another supported Trimui device, make sure the card also has the platform bootstrap folder from a recent release. For current Trimui releases, that means copying the `trimui/` folder from the release to the SD-card root.
+If you move the same SD card to another supported TrimUI device, make sure the card has the current release's `trimui/` folder at the SD-card root.
 
 Settings, saves, ROMs, BIOS files, artwork, and Paks live on the SD card, but device-specific settings and logs may be stored under different `.userdata/<platform>/` folders such as `.userdata/tg5040/` and `.userdata/tg5050/`.

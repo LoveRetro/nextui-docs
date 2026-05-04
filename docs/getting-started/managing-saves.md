@@ -26,15 +26,16 @@ These are the safest files to move between devices and emulators.
 
 ## RetroArch `.srm` support
 
-By default, NextUI uses the emulator's default save file format. RetroArch-style `.srm` save support can be enabled in Settings.
+By default, NextUI uses the MinUI save format. RetroArch-style `.srm` save support can be enabled in Settings.
 
-After changing this setting, existing save files may need to be renamed before NextUI sees them.
+Changing the save format changes the filename NextUI reads and writes. Existing saves must be renamed or copied to the configured format before NextUI sees them.
 
-Example:
+Formats:
 
 ```text
-Old file: Pokemon Crystal.sav
-New file: Pokemon Crystal.srm
+MinUI default:  Game.gba.sav
+RetroArch:     Game.srm
+Generic:       Game.sav
 ```
 
 !!! warning
@@ -44,13 +45,13 @@ New file: Pokemon Crystal.srm
 
 Save states are different from in-game saves. They are emulator snapshots and are more sensitive to emulator version, core, and settings.
 
-Save states are stored in the hidden `.userdata` folder, usually under:
+Save-state payloads are stored in hidden `.userdata` folders under:
 
 ```text
 .userdata/shared/<TAG>-<core>/
 ```
 
-Common save-state folders:
+Examples:
 
 | Core | Save state dir | Config dir |
 |---|---|---|
@@ -67,6 +68,16 @@ Common save-state folders:
 | PCE (mednafen_pce_fast) | `.userdata/shared/PCE-mednafen_pce_fast` | `.userdata/<platform>/PCE-mednafen_pce_fast` |
 
 Replace `<platform>` with `tg5040` for Trimui Brick / Smart Pro, or `tg5050` for Smart Pro S.
+
+NextUI also stores launcher resume metadata and preview images under:
+
+```text
+.userdata/shared/.minui/<EMU>/
+```
+
+That `.minui` folder is not the actual save-state payload. It stores the slot marker and preview data used by the launcher and game switcher.
+
+Quicksave and auto-resume use the same save-state system. Before sleep or power-off, integrated NextUI emulators write SRAM, RTC data, an autosave state, and an auto-resume marker. This depends on the emulator core supporting serialization. Standalone community emulator Paks can have different behavior.
 
 ## Migrating to a new SD card
 
@@ -141,22 +152,9 @@ Settings from the Settings app are stored in:
 
 If your menu settings are badly broken, deleting `minuisettings.txt` may reset Settings-app preferences.
 
-## Syncing saves with Syncthing or another sync tool
+## Sync tools
 
-For syncing between devices, in-game saves are safer than save states.
-
-Recommended:
-
-- Sync `Saves/`.
-- Use `.srm` saves if you also sync with RetroArch devices.
-- Avoid syncing a game while it is running.
-- Be careful with PlayStation folder names; another device may use `psx` while NextUI uses `PS`.
-
-Use caution:
-
-- Syncing `.userdata/shared/` can copy save states, settings, and databases that may not be compatible between devices.
-- Save states can crash if they came from a different emulator, different core version, or different save-state format.
-- FAT32 and exFAT do not support Unix symlinks. Some advanced sync or PortMaster workflows that expect symlinks may not work on a standard NextUI card.
+Syncthing and similar sync tools are community Paks, not part of base NextUI. See [Paks](../paks.md#save-sync-paks) for guidance before syncing saves between devices.
 
 ## Hidden files on your computer
 
