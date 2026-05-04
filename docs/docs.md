@@ -33,7 +33,7 @@ NextUI supports these TrimUI devices:
 - TrimUI Smart Pro S
 - TrimUI Brick Hammer, which is functionally the same as the TrimUI Brick
 
-For other handhelds, check [MinUI](https://github.com/shauninman/MinUI) or wait for maintainers to publish explicit NextUI support.
+For other handhelds, check [MinUI](https://github.com/shauninman/MinUI).
 
 ---
 
@@ -48,7 +48,7 @@ NextUI features a rebuilt emulation engine and many handheld-focused additions:
 - Rewind support by [@Helaas](https://github.com/Helaas).
 - RetroAchievements integration by [@clintonium-119](https://github.com/clintonium-119).
 - Pak Store by [@brandonkowalski](https://github.com/brandonkowalski).
-- Power-off and limbo protection by [@Helaas](https://github.com/Helaas), protecting the SD card during shutdown by stopping writers and unmounting cleanly before hardware power-off.
+- Power-off protection (no limbo) by [@Helaas](https://github.com/Helaas).
 - Wi-Fi, Bluetooth, and USB-C DAC support.
 - Game artwork and media support.
 - Shaders and overlays.
@@ -69,8 +69,6 @@ NextUI features a rebuilt emulation engine and many handheld-focused additions:
 ## About NextUI
 
 NextUI was started by Robin [@ro8inmorgan](https://github.com/ro8inmorgan) and [@frysee](https://github.com/frysee) as a fork of the popular MinUI CFW by [@shauninman](https://github.com/shauninman/MinUI).
-
-It became especially popular on TrimUI devices because it keeps MinUI's understated launcher style while adding the device-specific features that the NextUI community wanted to build.
 
 ---
 

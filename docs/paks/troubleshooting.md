@@ -15,6 +15,8 @@ Check:
 
 If the Pak does not support your device, it will not work until the Pak author adds support.
 
+Smart Pro S users should check compatibility carefully because older Paks can support only earlier TrimUI devices.
+
 ## Tool Pak installed but does not appear
 
 Tool Paks should be installed under the root-level `Tools/` folder in the correct platform folder.
@@ -52,6 +54,15 @@ Common causes:
 - Required BIOS, runtime, or game data is missing.
 - Stale `.userdata` files are breaking the Pak.
 - The Pak uses a standalone emulator with different behavior than built-in emulators.
+
+Try:
+
+1. Update Pak Store.
+2. Update the Pak.
+3. Confirm the Pak supports your device.
+4. Confirm required files are present.
+5. Check logs in `.userdata/<platform>/logs/`.
+6. Remove stale Pak userdata for that Pak only, then reinstall.
 
 Check logs:
 

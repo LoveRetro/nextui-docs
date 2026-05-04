@@ -1,6 +1,14 @@
 # PortMaster on NextUI
 
-PortMaster lets supported handhelds run many native Linux game ports. On NextUI, PortMaster support is provided through community Paks and may have different compatibility than other firmware.
+PortMaster support on NextUI is community-provided through Paks.
+
+NextUI maintainers do not maintain PortMaster, PortMaster runtimes, individual ports, port scripts, or port compatibility. For PortMaster help, use the Discord community Pak or PortMaster channels and include logs.
+
+## Compatibility limits
+
+Running PortMaster on TrimUI Brick and TrimUI Smart Pro is challenging because those devices use the Allwinner A133P chipset. Smart Pro S has the same class of issue on the Allwinner A523. These devices do not have the native 32-bit driver support that many PortMaster ports expect, so compatibility is limited even when the Pak installs correctly.
+
+NextUI install docs recommend FAT32 or exFAT. These filesystems do not support Unix symlinks. Ports or fixes that rely on symlinks need a NextUI-compatible workaround.
 
 ## What PortMaster is for
 
@@ -15,62 +23,20 @@ In many cases, PortMaster installs the launcher and patching logic, but you must
 3. Launch `Pak Store`.
 4. Install the PortMaster-related Pak available for your device.
 5. Launch PortMaster.
-6. Update PortMaster if prompted.
-7. Install a port.
-8. Read the port's instructions.
-9. Copy required game data if the port requires it.
-10. Launch the game from the appropriate Ports folder/menu.
+6. Follow the PortMaster and individual port instructions.
+7. Copy required game data if the port requires it.
 
-## Why only some ports are visible
+## Getting help
 
-Port availability depends on your device, platform support, runtime support, and PortMaster's filters.
+Before asking for PortMaster help:
 
-If you only see a small number of ports:
+- update Pak Store;
+- update the PortMaster Pak;
+- update the installed port;
+- confirm required game files are present;
+- check logs under `.userdata/<platform>/logs/`.
 
-- update PortMaster;
-- check filters;
-- allow experimental ports only if you understand they may fail;
-- install/update runtimes if the PortMaster UI offers them;
-- confirm your device is supported by the port.
-
-Smart Pro S and experimental devices may have fewer working Paks or ports until maintainers and Pak authors add support.
-
-## Required game files
-
-Many ports require files from a legally owned copy of the game.
-
-Common symptoms of missing or wrong game data:
-
-- the port launches then immediately exits;
-- a patcher runs and fails;
-- the game reaches a splash screen and crashes;
-- logs mention missing files.
-
-NextUI docs do not provide copyrighted game files or links to them.
-
-## Filesystem limitations
-
-NextUI install docs recommend FAT32 or exFAT. These filesystems do not support Unix symlinks.
-
-Some advanced PortMaster instructions or community fixes may assume symlink support. If a port requires symlinks, it may need a specific NextUI-compatible patch or may not work from a standard FAT32/exFAT card.
-
-## When a PortMaster game returns to the menu
-
-Try this checklist:
-
-1. Update NextUI.
-2. Update Pak Store.
-3. Update the PortMaster Pak.
-4. Update the installed port.
-5. Confirm required game files are present.
-6. Confirm the port supports your device.
-7. Install runtimes if PortMaster offers them.
-8. Check logs under `.userdata/<platform>/logs/`.
-9. Ask in the PortMaster/community Pak support channel with the log file.
-
-## Support boundaries
-
-NextUI maintainers may not be able to support every third-party PortMaster port. When asking for help, include:
+Ask in the Discord community Pak or PortMaster channels with:
 
 ```text
 Device:

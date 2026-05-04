@@ -30,7 +30,7 @@ Use:
 Roms/Game Boy (GB)/.media/Tetris (World).png
 ```
 
-Do not name the artwork `Tetris (World).zip.png` unless testing confirms your tool generated and NextUI expects that format.
+Do not name the artwork `Tetris (World).zip.png`.
 
 ## Adding artwork manually
 

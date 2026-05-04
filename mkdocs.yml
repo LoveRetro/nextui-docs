@@ -116,7 +116,6 @@ nav:
   - Support:
       - Frequently Asked Questions: support/faq.md
       - Troubleshooting: support/troubleshooting.md
-      - Known Issues: support/known-issues.md
   - Development: development/build.md
   - NextUI Homepage:
       - index.md

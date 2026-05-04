@@ -6,7 +6,7 @@ Most NextUI problems come down to one of these areas:
 - missing ROMs or wrong folder tags;
 - missing BIOS files;
 - arcade ROM sets that do not match the emulator;
-- Paks that are missing, outdated, or not built for your device;
+- community Paks that are missing, outdated, or not built for your device;
 - hidden `.userdata` settings or save states.
 
 Start with the symptom that matches your problem.
@@ -88,10 +88,9 @@ Check:
 1. Does that system require a BIOS file?
 2. Does the ROM match the emulator?
 3. If it is arcade/Neo Geo, is it an FBNeo-compatible ROM set?
-4. If it is a PortMaster game, did you add the required commercial game data?
-5. If it is a community Pak, does the Pak support your device?
-6. Update NextUI and update the Pak.
-7. Check logs.
+4. If it is a community Pak or PortMaster game, see [Pak Troubleshooting](../paks/troubleshooting.md) and [PortMaster](../paks/portmaster.md).
+5. Update NextUI.
+6. Check logs.
 
 Logs are in hidden platform folders:
 
@@ -133,23 +132,6 @@ Replace `X:` with the SD-card drive letter.
 
 !!! warning
     Filesystem repair can recover a card, but it is not a substitute for backups. If corruption repeats, replace the SD card.
-
-## A Pak is missing from Pak Store
-
-Paks are device-specific. Use the compatibility filters in Pak Store. If a Pak is not listed for your device, check the Pak's own support notes.
-
-For Smart Pro S, this is a common cause of missing or non-working Paks because older Paks can support only earlier TrimUI devices.
-
-## A Pak launches and immediately exits
-
-Try:
-
-1. Update Pak Store.
-2. Update the Pak.
-3. Confirm the Pak supports your device.
-4. Check whether the Pak requires files you must provide.
-5. Check logs in `.userdata/<platform>/logs/`.
-6. Remove stale Pak userdata for that Pak only, then reinstall.
 
 ## Save states crash after importing
 
