@@ -97,6 +97,18 @@ When the device is idle, NextUI first turns the screen off and may pulse LEDs. B
 
 If a standalone emulator Pak wakes to a black screen or audio-only state, quit and relaunch the game. Standalone Paks may not resume as reliably as built-in emulators.
 
+## FN / mute switch
+
+NextUI supports configurable FN/mute switch behavior on devices that have the switch.
+
+Known uses include:
+
+- toggling a night-mode style display profile;
+- toggling D-pad/analog behavior;
+- toggling turbo behavior.
+
+If volume buttons appear locked or the FN switch does more than you expect, check Settings for FN-switch options. Setting `Volume when toggled` to `unchanged` is a common fix if the FN switch is muting volume unexpectedly.
+
 ## Clock, RTC, and NTP
 
 NextUI supports real-time clock behavior and automatic NTP time synchronization.

@@ -12,14 +12,7 @@
 
 ## Supported devices
 
-NextUI supports these TrimUI devices:
-
-- TrimUI Brick
-- TrimUI Smart Pro
-- TrimUI Smart Pro S
-- TrimUI Brick Hammer, which is functionally the same as the TrimUI Brick
-
-For more details, see [Device Support](reference/device-support.md).
+See [Prerequisites](getting-started/index.md) for the list of supported devices and requirements.
 
 ## Next steps
 

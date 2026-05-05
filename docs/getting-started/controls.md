@@ -37,21 +37,11 @@ To take a screenshot, open the in-game menu with `Menu`, navigate to Controls or
 
 ## FN / mute switch
 
-NextUI supports configurable FN/mute switch behavior on devices that have the switch.
-
-Known uses include:
-
-- toggling a night-mode style display profile;
-- toggling D-pad/analog behavior;
-- toggling turbo behavior.
-
-If volume buttons appear locked or the FN switch does more than you expect, check Settings for FN-switch options. Setting `Volume when toggled` to `unchanged` is a common fix if the FN switch is muting volume unexpectedly.
+See [LEDs, Power, Sleep, and Clock](../customizing/power-leds-clock.md#fn--mute-switch) for FN/mute switch configuration.
 
 ## Sleep behavior
 
-When the device is idle, NextUI first turns the screen off and may pulse LEDs. By default, `Screen timeout` is 60 seconds and `Suspend timeout` is 30 seconds after screen-off. Both values can be changed in Settings.
-
-Standalone emulator Paks may not resume from sleep as reliably as built-in emulators.
+See [LEDs, Power, Sleep, and Clock](../customizing/power-leds-clock.md#sleep-behavior) for sleep timeout defaults and behavior.
 
 ## SD card eject
 

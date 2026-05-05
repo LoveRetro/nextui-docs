@@ -2,6 +2,8 @@
 
 This page collects common emulator-specific notes. It is not a complete compatibility list.
 
+For ROM folder naming, multi-emulator setup, arcade, and Neo Geo instructions, see [ROMs, BIOS, and Arcade](roms.md).
+
 ## Game Boy Advance: GBA vs MGBA
 
 NextUI can expose more than one GBA core.
@@ -51,23 +53,6 @@ PC Engine CD games require the syscard BIOS:
 ```text
 Bios/PCE/syscard3.pce
 ```
-
-## Arcade / FBNeo / Neo Geo
-
-Arcade ROMs are set-specific. Do not rename arcade ZIPs.
-
-Use:
-
-```text
-Roms/Arcade (FBN)/
-Roms/Neo Geo (FBN)/
-```
-
-For Neo Geo through FBNeo, put `neogeo.zip` beside the game ZIPs.
-
-Use `map.txt` for display names.
-
-See [ROMs, BIOS, and Arcade](../getting-started/roms.md#arcade-and-fbneo) for detailed arcade and Neo Geo instructions.
 
 ## Nintendo DS
 

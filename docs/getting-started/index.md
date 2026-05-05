@@ -2,7 +2,7 @@
 
 !!! warning "Read before continuing!"
 
-    NextUI **officially supports** the TrimUI Brick, TrimUI Smart Pro, and TrimUI Smart Pro S.
+    NextUI **officially supports** the TrimUI Brick, TrimUI Smart Pro, TrimUI Smart Pro S, and the TrimUI Brick Hammer (which is functionally the same as the TrimUI Brick).
 
     The steps outlined here only apply to these supported devices running the stock operating system.
 
@@ -14,7 +14,7 @@
 
 ### What You Will Need
 
-- A TrimUI Brick, TrimUI Smart Pro, or TrimUI Smart Pro S running the stock operating system.
+- A TrimUI Brick, TrimUI Smart Pro, TrimUI Smart Pro S, or TrimUI Brick Hammer running the stock operating system.
 - A fresh micro SD card from a reputable vendor (SanDisk, Samsung, etc.)
     - The size of the card depends on the size of the ROMs you plan to play
 - Software on your computer to format the SD Card

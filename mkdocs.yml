@@ -86,9 +86,12 @@ nav:
       - Prerequisites: getting-started/index.md
       - Installation: getting-started/installation.md
       - Updating: getting-started/updating.md
+      - Controls and Shortcuts: getting-started/controls.md
       - ROMs, BIOS, and Arcade: getting-started/roms.md
+      - Emulator Notes: getting-started/emulator-notes.md
       - BIOS: getting-started/bios.md
       - Saves and Migration: getting-started/managing-saves.md
+      - RetroAchievements: getting-started/retroachievements.md
       - Cheats: getting-started/cheats.md
   - Paks:
       - Overview: paks.md
@@ -107,11 +110,6 @@ nav:
       - Emulator Icons: customizing/theming/emulator-icons.md
       - Quick Menu Theme: customizing/theming/quick-menu-theme.md
       - Collections: customizing/custom-categories.md
-  - Reference:
-      - Device Support: reference/device-support.md
-      - Controls and Shortcuts: reference/controls.md
-      - RetroAchievements: reference/retroachievements.md
-      - Emulator Notes: reference/emulator-notes.md
   - Support:
       - Frequently Asked Questions: support/faq.md
       - Troubleshooting: support/troubleshooting.md

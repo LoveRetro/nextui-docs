@@ -108,4 +108,11 @@ Tell users clearly if your Pak does not support:
 
 Some standalone programs reset brightness or volume. NextUI includes `syncsettings.elf` for Pak authors who need to restore global settings around a launched binary.
 
+## Community Resources
+
 Interested in making a Pak? Community member Jose Diaz-Gonzalez has put together a [fantastic guide](https://josediazgonzalez.com/2025/06/16/writing-a-pak-for-the-minui-and-nextui-launchers/).
+
+### Community UI Toolkits
+
+- [Gabagool](https://github.com/BrandonKowalski/gabagool) by Brandon T. Kowalski — Go UI library for building Paks on retro handhelds.
+- [Apostrophe](https://github.com/Helaas/Apostrophe) by Helaas — C UI toolkit for building Paks on NextUI.
