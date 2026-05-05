@@ -8,9 +8,9 @@ All supported devices have configurable LEDs. Use the LED Control app from Tools
 
 | Device | LED zones | Settings file |
 |---|---|---|
-| Trimui Brick | F1 key, F2 key, top bar, L&R triggers | `.userdata/shared/ledsettings_brick.txt` |
-| Trimui Smart Pro | Left stick, right stick, TrimUI logo | `.usercontent/shared/ledsettings.txt` |
-| Trimui Smart Pro S | Left stick, right stick, TrimUI logo | `.usercontent/shared/ledsettings.txt` |
+| Trimui Brick | F1 key, F2 key, top bar, L/R trigger LEDs | `.userdata/shared/ledsettings_brick.txt` |
+| Trimui Smart Pro | Left stick, right stick, TrimUI logo | `.userdata/shared/ledsettings.txt` |
+| Trimui Smart Pro S | Left stick, right stick, TrimUI logo | `.userdata/shared/ledsettings.txt` |
 
 ## LED Control app
 
@@ -25,7 +25,7 @@ On the home screen:
 **Trimui Brick** has the following configurable LEDs:
 
 - Two LEDs on the front of the device for each function button (F1 & F2)
-- Two LEDs under the triggers (one under L1 & R2, the other under R1 & R2)
+- L/R trigger LEDs, controlled as one zone
 - One LED bar on the top of the device
 
 **Trimui Smart Pro and Smart Pro S** have the following configurable LEDs:
@@ -93,7 +93,7 @@ To enable ambient mode (in a supported emulator) follow these steps:
 
 ## Sleep behavior
 
-When the device is idle, NextUI enters light sleep first. Light sleep turns the screen off and pulses LEDs. After about two minutes, the device enters deep sleep and LEDs turn off.
+When the device is idle, NextUI first turns the screen off and may pulse LEDs. By default, `Screen timeout` is 60 seconds and `Suspend timeout` is 30 seconds after screen-off. Both values can be changed in Settings.
 
 If a standalone emulator Pak wakes to a black screen or audio-only state, quit and relaunch the game. Standalone Paks may not resume as reliably as built-in emulators.
 

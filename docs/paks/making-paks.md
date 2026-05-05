@@ -13,8 +13,7 @@ Paks are platform-specific. Use the platform folders from the current extras bun
 
 | Device | Platform | Tool Paks | Emulator Paks |
 |---|---|---|---|
-| Trimui Brick | `tg5040` | `Tools/tg5040/` | `Emus/tg5040/` |
-| Trimui Smart Pro | `tg5040` | `Tools/tg5040/` | `Emus/tg5040/` |
+| Trimui Smart Pro / Brick | `tg5040` | `Tools/tg5040/` | `Emus/tg5040/` |
 | Trimui Smart Pro S | `tg5050` | `Tools/tg5050/` | `Emus/tg5050/` |
 
 !!! warning
@@ -68,7 +67,7 @@ Pak launch scripts receive these environment variables:
 
 | Variable | Description |
 |---|---|
-| `$PLATFORM` | Device platform, e.g. `tg5040` or `tg5050` |
+| `$PLATFORM` | Device platform, e.g. `tg5040` for Trimui Smart Pro / Brick or `tg5050` for Trimui Smart Pro S |
 | `$DEVICE` | Device identifier |
 | `$SDCARD_PATH` | Path to SD card root |
 | `$LOGS_PATH` | Path to log directory |

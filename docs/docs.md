@@ -41,27 +41,23 @@ For other handhelds, check [MinUI](https://github.com/shauninman/MinUI).
 
 NextUI features a rebuilt emulation engine and many handheld-focused additions:
 
-- Fixed screen tearing and sync stutter by rebuilding the emulator engine core.
-- Game switcher menu by [@frysee](https://github.com/frysee).
-- High quality audio through [libsamplerate](https://github.com/libsndfile/libsamplerate).
-- Low latency audio and video behavior.
-- Rewind support by [@Helaas](https://github.com/Helaas).
-- RetroAchievements integration by [@clintonium-119](https://github.com/clintonium-119).
-- Pak Store by [@brandonkowalski](https://github.com/brandonkowalski).
-- Power-off protection (no limbo) by [@Helaas](https://github.com/Helaas).
-- Wi-Fi, Bluetooth, and USB-C DAC support.
-- Game artwork and media support.
-- Shaders and overlays.
-- Cheat-file support for compatible libretro cores.
-- Optional community Paks for extra emulators, tools, PortMaster, file transfer, sync utilities, and more.
-- Configurable display settings, color temperature, brightness, and FN switch behavior.
-- LED colors, effects, brightness, status indicators, and ambient LED mode on supported devices.
+- Rebuilt emulator core with screen-tearing and sync-stutter fixes, OpenGL/GPU rendering, dynamic CPU scaling, optimized cores, and low-latency audio/video through [libsamplerate](https://github.com/libsndfile/libsamplerate).
+- Game switcher by [@frysee](https://github.com/frysee), scrolling titles, menu animations, and transition/color polish by [@radther](https://github.com/radther).
+- Shaders and overlays, including shader presets/options, scanline defaults, PAL support, core-option categories, and compatibility work by [@bSr43](https://github.com/bSr43), [@DrFlarp](https://github.com/DrFlarp), and [@Pobega](https://github.com/Pobega).
+- Rewind support and power-off protection by [@Helaas](https://github.com/Helaas).
+- Deep sleep and suspend support by [@zhaofengli](https://github.com/zhaofengli), with suspend fixes by [@DrFlarp](https://github.com/DrFlarp), plus configurable screen and sleep timeouts.
+- RetroAchievements integration and in-game notifications by [@clintonium-119](https://github.com/clintonium-119).
+- Wi-Fi, Bluetooth, USB-C DAC support, automatic NTP time synchronization, timezone handling, and RTC support.
+- Screenshots, Doom/PRBOOM support, Atari extras, and build/runtime improvements by [@josegonzalez](https://github.com/josegonzalez).
+- Expanded extra emulator Paks by [@bSr43](https://github.com/bSr43) and [@cobaltgit](https://github.com/cobaltgit).
+- Pak Store by [@brandonkowalski](https://github.com/brandonkowalski), plus community Paks for extra emulators, tools, PortMaster, file transfer, sync utilities, and more.
+- Game artwork and media, game-time tracking, battery history, and battery time-left prediction.
+- Cheats, broader ZIP support including BZ2/LZMA, and FBNeo screen rotation.
 - Custom boot logos contributed by [@SolvalouArt](https://bsky.app/profile/solvalouart.bsky.social).
-- Haptic feedback in the menu by [@ExonakiDev](https://github.com/exonakidev).
-- Deep sleep by [@zhaofengli](https://github.com/zhaofengli).
-- RTC and NTP time synchronization.
-- Game-time and battery tracking.
-- Scrolling titles for longer game names.
+- Haptic feedback and rumble in the interface by [@ExonakiDev](https://github.com/exonakidev).
+- Display controls for color temperature, brightness, contrast, saturation, and exposure.
+- Configurable FN/Mute behavior, including night-mode display toggles and D-pad/analog/turbo switching.
+- LED colors, effects, brightness, status indicators, and ambient LED mode on supported devices.
 - CJK-capable Next font for Japanese, Chinese, and other ROM names.
 
 ---

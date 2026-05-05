@@ -102,7 +102,6 @@ nav:
       - Artwork: customizing/game-artwork.md
       - Overlays: customizing/overlays.md
       - Shaders: shaders/index.md
-      - LED Controls: customizing/leds.md
       - LEDs, Power, and Clock: customizing/power-leds-clock.md
       - Custom Boot Logo: customizing/theming/custom-boot-logo.md
       - Emulator Icons: customizing/theming/emulator-icons.md

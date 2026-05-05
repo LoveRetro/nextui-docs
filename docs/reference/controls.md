@@ -49,7 +49,7 @@ If volume buttons appear locked or the FN switch does more than you expect, chec
 
 ## Sleep behavior
 
-When the device is idle, NextUI enters light sleep first. Light sleep turns the screen off and pulses LEDs. After about two minutes, the device enters deep sleep and LEDs turn off.
+When the device is idle, NextUI first turns the screen off and may pulse LEDs. By default, `Screen timeout` is 60 seconds and `Suspend timeout` is 30 seconds after screen-off. Both values can be changed in Settings.
 
 Standalone emulator Paks may not resume from sleep as reliably as built-in emulators.
 

@@ -355,6 +355,11 @@ For general Pak concepts, save-sync guidance, PortMaster notes, and Pak troubles
     const STOREFRONT_URL = 'https://raw.githubusercontent.com/LoveRetro/nextui-pak-store/refs/heads/gh-pages/storefront.json';
     const OFFICIAL_PAKS = ['Pak Store', 'Over The Air Updater'];
     const SUPPORTED_PLATFORMS = ['tg5040', 'tg5050', 'my355'];
+    const PLATFORM_LABELS = {
+        tg5040: 'Trimui Smart Pro / Brick',
+        tg5050: 'Trimui Smart Pro S',
+        my355: 'Miyoo Flip'
+    };
 
     let allPaks = [];
     let currentFilters = { type: 'all', category: 'all', platform: 'all', search: '' };
@@ -383,6 +388,10 @@ For general Pak concepts, save-sync guidance, PortMaster notes, and Pak troubles
     function getSupportedPlatforms(pak) {
         if (!pak.platforms) return [];
         return pak.platforms.filter(p => SUPPORTED_PLATFORMS.includes(p.toLowerCase()));
+    }
+
+    function getPlatformLabel(platform) {
+        return PLATFORM_LABELS[platform.toLowerCase()] || platform;
     }
 
     function filterPaks(paks) {
@@ -432,7 +441,7 @@ For general Pak concepts, save-sync guidance, PortMaster notes, and Pak troubles
                 ${pak.large_pak ? '<div class="pak-badges"><span class="pak-badge large">Large</span></div>' : ''}
                 <p class="pak-description">${escapeHtml(pak.description || 'No description available.')}</p>
                 ${categories.length ? `<div class="pak-categories">${categories.map(c => `<span class="pak-category">${escapeHtml(c)}</span>`).join('')}</div>` : ''}
-                ${platforms.length ? `<div class="pak-platforms">${platforms.map(p => `<span class="pak-platform">${escapeHtml(p)}</span>`).join('')}</div>` : ''}
+                ${platforms.length ? `<div class="pak-platforms">${platforms.map(p => `<span class="pak-platform">${escapeHtml(getPlatformLabel(p))}</span>`).join('')}</div>` : ''}
                 <a href="${escapeHtml(pak.repo_url)}" target="_blank" class="pak-link">View on GitHub</a>
             </div>
         `;
@@ -503,7 +512,7 @@ For general Pak concepts, save-sync guidance, PortMaster notes, and Pak troubles
             btn.className = 'pak-filter-btn';
             btn.dataset.filter = 'platform';
             btn.dataset.value = platform;
-            btn.textContent = platform.toUpperCase();
+            btn.textContent = getPlatformLabel(platform);
             platformContainer.appendChild(btn);
         });
 

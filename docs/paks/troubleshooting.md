@@ -27,8 +27,7 @@ Tool Paks for each device:
 
 | Device | Tool Paks folder |
 |---|---|
-| Trimui Brick | `Tools/tg5040/` |
-| Trimui Smart Pro | `Tools/tg5040/` |
+| Trimui Smart Pro / Brick | `Tools/tg5040/` |
 | Trimui Smart Pro S | `Tools/tg5050/` |
 
 ## Emulator Pak installed but no games show
