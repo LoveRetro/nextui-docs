@@ -3,6 +3,7 @@
 This page collects common emulator-specific notes. It is not a complete compatibility list.
 
 For ROM folder naming, multi-emulator setup, arcade, and Neo Geo instructions, see [ROMs, BIOS, and Arcade](roms.md).
+For a full Base vs Extras inventory, see [Supported Emulators](emulators.md).
 
 ## Game Boy Advance: GBA vs MGBA
 

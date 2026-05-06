@@ -16,6 +16,30 @@ See [Installation](../getting-started/installation.md) and [Updating](../getting
 
 ---
 
+## When should I add `MinUI.zip` or the `trimui` folder back to my SD card?
+
+NextUI uses two different items on the root of the SD card:
+
+* `MinUI.zip` is the installer, updater, and repair archive. Do **not** unzip it. It lives in the `-base.zip` and `-all.zip` releases.
+* The `trimui` folder contains the Trimui-side launch files that let the stock firmware start NextUI.
+
+Use this guide:
+
+| Situation                                                                               | Add `MinUI.zip`? |           Add `trimui` folder? |
+| --------------------------------------------------------------------------------------- | ---------------: | -----------------------------: |
+| Fresh NextUI install on a new or reformatted SD card                                    |              Yes |                            Yes |
+| Moving an existing NextUI SD card to another supported Trimui device for the first time |              No  |                            Yes |
+| Manual NextUI update from a downloaded release                                          |              Yes |                     Usually no |
+| Repairing an install that no longer boots correctly                                     |              Yes |                            Yes |
+| Device boots to the stock Trimui OS instead of NextUI                                   |              Yes |                            Yes |
+| Stock Trimui firmware was updated or reflashed                                          |              Yes |                            Yes |
+
+To install, update, or repair NextUI, download the latest NextUI release and copy the needed files to the **root of the SD card**. For a normal NextUI update, you usually only need to copy `MinUI.zip`; you do not need to replace the `trimui` folder unless your encounter issues booting into NextUI after the update.
+
+After a successful install or update, `MinUI.zip` will be removed automatically. That is normal. Adding `MinUI.zip` or the `trimui` folder again should not delete your ROMs, saves, BIOS files, artwork, or Paks; it only restores the launch files used to start NextUI.
+
+---
+
 ## I am currently using classic MinUI. How can I migrate?
 
 You can install NextUI over an existing MinUI card. Back up your saves first, then follow the [installation guide](../getting-started/installation.md) using the latest `-all.zip` release if you want the full NextUI folder set.

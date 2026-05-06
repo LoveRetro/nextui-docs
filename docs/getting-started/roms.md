@@ -27,9 +27,9 @@ This is useful when one core is faster and another core is more compatible.
 
 ---
 
-### Disc-based games
+### Multi-disc games and m3u
 
-To streamline launching multi-file disc-based games, place your BIN / CUE files in a folder with the same name as the CUE file.
+To streamline launching single-disc games with multiple files, place your BIN / CUE files in a folder with the same name as the CUE file.
 
 NextUI will automatically launch the CUE file instead of navigating into the folder when selected.
 
@@ -39,6 +39,8 @@ Tony Hawk's Pro Skater 2 (USA)/
   Tony Hawk's Pro Skater 2 (USA).cue
 ```
 
+An `.m3u` file is a plain-text playlist that lists each disc file. NextUI uses it so all discs share one memory card and one save-state slot, and so you can swap discs in-game from the NextUI menu with `left` or `right` on the D-Pad.
+
 For multi-disc games, follow these steps.
 
 1. Create a folder for your disc files.
@@ -46,12 +48,14 @@ For multi-disc games, follow these steps.
 3. Create a `.m3u` file that matches the name of the folder created in step one.
 4. Edit the `.m3u` file and add the relative path to each disc's .cue file, one file per line.
 
-NextUI will automatically launch the CUE file instead of navigating into the folder when selected.
+NextUI will automatically launch the `.m3u` file instead of navigating into the folder when selected.
 
-For example, Final Fantasy VII has three discs:
+Here are a few example layouts:
 
-```
-Final Fantasy VII (USA)/
+**PlayStation - Final Fantasy VII**
+
+```text
+Roms/PlayStation (PS)/Final Fantasy VII (USA)/
   Final Fantasy VII (USA).m3u
   Final Fantasy VII (USA) (Disc 1).bin
   Final Fantasy VII (USA) (Disc 1).cue
@@ -61,17 +65,31 @@ Final Fantasy VII (USA)/
   Final Fantasy VII (USA) (Disc 3).cue
 ```
 
-The `.m3u` file for FF7 would contain:
+`Final Fantasy VII (USA).m3u`
 
-```
+```text
 Final Fantasy VII (USA) (Disc 1).cue
 Final Fantasy VII (USA) (Disc 2).cue
 Final Fantasy VII (USA) (Disc 3).cue
 ```
 
-When you are playing a multi-disc game, the NextUI in-game Menu will display the current disc.
+**Sega CD - Example 2-disc game**
 
-Use `left` or `right` on the D-Pad to change discs.
+```text
+Roms/Sega CD (SEGACD)/Example Sega CD Game (USA)/
+  Example Sega CD Game (USA).m3u
+  Example Sega CD Game (USA) (Disc 1).bin
+  Example Sega CD Game (USA) (Disc 1).cue
+  Example Sega CD Game (USA) (Disc 2).bin
+  Example Sega CD Game (USA) (Disc 2).cue
+```
+
+`Example Sega CD Game (USA).m3u`
+
+```text
+Example Sega CD Game (USA) (Disc 1).cue
+Example Sega CD Game (USA) (Disc 2).cue
+```
 
 NextUI also supports `.chd` files and `.pbp` files under 2GB.
 
@@ -110,17 +128,17 @@ sf2.zip	    Street Fighter II
 
 ## Arcade and FBNeo
 
-Arcade emulation is different from console emulation. Many arcade emulators require ROM ZIPs with exact filenames and exact internal files from a matching ROM set.
+Arcade emulation requires ROM ZIPs with exact filenames and matching internal files from the correct ROM set.
 
 For FBNeo:
 
-- Use a folder ending in `(FBN)`, such as `Roms/Arcade (FBN)/` or `Roms/Neo Geo (FBN)/`.
-- Keep arcade ZIP filenames unchanged, such as `mslug.zip`.
-- Do not rename arcade ZIPs for readability. Use `map.txt` for display names.
-- Use ROMs from a set that matches FBNeo. Random MAME or Tiny Best Set arcade files may not match the FBNeo version included with NextUI.
-- If FBNeo says the ROM set is unknown or wrong, the folder path may be correct but the ROM set may not match.
+* Use a folder ending in `(FBN)`, such as `Roms/Arcade (FBN)/` or `Roms/Neo Geo (FBN)/`.
+* Keep arcade ZIP filenames unchanged, such as `mslug.zip`.
+* Do not rename ZIPs for readability; use `map.txt` for display names.
+* Use ROMs from a set that matches the FBNeo version included with NextUI.
+* If FBNeo reports an unknown or wrong ROM set, the folder may be correct but the ROM set may not match.
 
-Example:
+Example layout:
 
 ```text
 Roms/Arcade (FBN)/
@@ -130,13 +148,7 @@ Roms/Arcade (FBN)/
 └── sf2.zip
 ```
 
----
-
-## Neo Geo with FBNeo
-
-Neo Geo games should be handled through FBNeo on NextUI.
-
-Recommended layout:
+Neo Geo games should also use FBNeo on NextUI. You can place them in their own folder:
 
 ```text
 Roms/Neo Geo (FBN)/
@@ -146,38 +158,15 @@ Roms/Neo Geo (FBN)/
 └── kof98.zip
 ```
 
-Or combined with other arcade games:
+Or combine them with other arcade games in `Roms/Arcade (FBN)/`.
 
-```text
-Roms/Arcade (FBN)/
-├── map.txt
-├── neogeo.zip
-├── mslug.zip
-└── kof98.zip
-```
+`neogeo.zip` is required for many Neo Geo games and should be kept in the same folder as the Neo Geo game ZIPs. Use `map.txt` to hide `neogeo.zip` from the menu if needed. Prefer `Neo Geo (FBN)` over `Neo Geo (NEOGEO)`, since current NextUI uses FBNeo and does not include a `NEOGEO.pak`.
 
-Important notes:
-
-- `neogeo.zip` is required for many Neo Geo games.
-- For FBNeo Neo Geo games, keep `neogeo.zip` in the same ROM folder as the Neo Geo game ZIPs.
-- Hide `neogeo.zip` from the menu with `map.txt` if you do not want to see it as a launchable item.
-- A folder named `Neo Geo (FBN)` is safer than relying on an older or missing `Neo Geo (NEOGEO)` folder. The current NextUI release does not include a `NEOGEO.pak`; use FBNeo instead.
-
----
-
-## FBNeo samples
-
-Some arcade games need sample ZIPs for sound effects, such as `dkong.zip` samples.
-
-Sample files go under:
+Some arcade games require sample ZIPs for sound effects. Place samples here:
 
 ```text
 Bios/FBN/fbneo/samples/dkong.zip
 ```
-
-The path uses uppercase `Bios` matching the NextUI convention.
-
----
 
 ## Games not showing
 
@@ -243,7 +232,7 @@ PWADs all depend on a particular IWAD as the base for running the PWAD. IWADs ar
 
     All IWADs must be named using lowercase characters, including for the file extension.
 
-In many cases, you will want to load specific PWADs with specific IWADs. Due to how PrBoom detects IWADs and lacking information about which IWAD is required by a PWAD, PrBoom may load the incorrect IWAD for your PWAD. To combat this, NextUI supports using a `doom.version` file to specify the correct `/Bios/PRBOOM` subdirectory to reference. Omitting a `doom.version` text file will result in the default PrBoom using the default IWAD detection algorithm. It is recommended to use a `doom.version` text file in conjunction with the `m3u` text file format commonly used for [Disc-based games](#disc-based-games) to tie PWADs to have a clean directory structure.
+In many cases, you will want to load specific PWADs with specific IWADs. Due to how PrBoom detects IWADs and lacking information about which IWAD is required by a PWAD, PrBoom may load the incorrect IWAD for your PWAD. To combat this, NextUI supports using a `doom.version` file to specify the correct `/Bios/PRBOOM` subdirectory to reference. Omitting a `doom.version` text file will result in the default PrBoom using the default IWAD detection algorithm. It is recommended to use a `doom.version` text file in conjunction with the `m3u` text file format commonly used for [Multi-disc games and m3u](#multi-disc-games-and-m3u) to tie PWADs to have a clean directory structure.
 
 Using `NextUI Doom.wad` as an example, we would have the following directory structure in our Roms folder:
 
