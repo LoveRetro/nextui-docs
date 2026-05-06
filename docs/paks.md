@@ -2,7 +2,9 @@
 
 Paks are optional packages that add tools, emulators, ports, file-transfer utilities, save-sync tools, and other community features to NextUI.
 
-The NextUI release includes Pak Store so you can browse and install compatible Paks on the device. The store itself lives at [Pak Store](pak-store.md).
+Pak Store is included with NextUI so you can browse and install compatible Paks directly on the device.
+
+[Open Pak Store](pak-store.md){ .md-button .md-button--primary }
 
 ## What is a Pak?
 

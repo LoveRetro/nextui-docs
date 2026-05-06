@@ -29,8 +29,7 @@ Most normal updates do **not** require recopying `trimui/`. Copy the current rel
 - you are doing a fresh install on a new or reformatted card;
 - the device boots to the stock TrimUI OS instead of NextUI;
 - the stock firmware was updated or reflashed;
-- you are moving a NextUI SD card to another supported TrimUI device for the first time;
-- a support helper specifically asks you to restore the bootstrap files.
+- you are moving a NextUI SD card to another supported TrimUI device for the first time.
 
 If unsure, copying both `MinUI.zip` and the current release's `trimui/` folder is a safe repair approach. The installer will behave like an update if the bootstrap pieces are already in place.
 
