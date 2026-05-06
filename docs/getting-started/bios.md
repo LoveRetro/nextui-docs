@@ -51,12 +51,12 @@ This is different from most BIOS files. See [Arcade and FBNeo](roms.md#arcade-an
 | System | Tag | File Name(s) | BIOS Directory |
 |---|---|---|---|
 | Doom | PRBOOM | prboom.wad, doom.wad, doom2.wad, doomu.wad, plutonia.wad, tnt.wad, freedoom.wad, freedoom1.wad, freedoom2.wad | SDCARD_ROOT/Bios/PRBOOM/prboom.wad, SDCARD_ROOT/Bios/PRBOOM/doom/doom.wad, SDCARD_ROOT/Bios/PRBOOM/doom2/doom2.wad, SDCARD_ROOT/Bios/PRBOOM/doom-ultimate/doomu.wad, SDCARD_ROOT/Bios/PRBOOM/plutonia/plutonia.wad, SDCARD_ROOT/Bios/PRBOOM/tnt/tnt.wad, SDCARD_ROOT/Bios/PRBOOM/freedoom/freedoom.wad, SDCARD_ROOT/Bios/PRBOOM/freedoom1/freedoom1.wad, SDCARD_ROOT/Bios/PRBOOM/freedoom2/freedoom2.wad |
-| Famicom | FC | disksys.rom | SDCARD_ROOT/Bios/FC/disksys.rom |
+| Famicom Disk System | FC | disksys.rom | SDCARD_ROOT/Bios/FC/disksys.rom |
 | Game Boy | GB | gb_bios.bin | SDCARD_ROOT/Bios/GB/gb_bios.bin |
 | Game Boy Color | GBC | gbc_bios.bin | SDCARD_ROOT/Bios/GBC/gbc_bios.bin |
 | Game Boy Advance | GBA | gba_bios.bin | SDCARD_ROOT/Bios/GBA/gba_bios.bin |
 | Game Boy Advance | MGBA | gba_bios.bin | SDCARD_ROOT/Bios/MGBA/gba_bios.bin |
-| Mega Drive / Genesis | MD | bios_CD_E.bin, bios_CD_J.bin, bios_CD_U.bin | SDCARD_ROOT/Bios/MD/bios_CD_E.bin, SDCARD_ROOT/Bios/MD/bios_CD_J.bin, SDCARD_ROOT/Bios/MD/bios_CD_U.bin |
+| Sega CD / Mega-CD | SEGACD | bios_CD_E.bin, bios_CD_J.bin, bios_CD_U.bin | SDCARD_ROOT/Bios/SEGACD/bios_CD_E.bin, SDCARD_ROOT/Bios/SEGACD/bios_CD_J.bin, SDCARD_ROOT/Bios/SEGACD/bios_CD_U.bin |
 | Amiga | PUAE | kick33180.A500, kick34005.A500, kick34005.CDTV, kick37175.A500, kick37350.A600, kick39106.A1200, kick39106.A4000, kick40060.CD32, kick40060.CD32.ext, kick40063.A600, kick40068.A1200, kick40068.A4000 | SDCARD_ROOT/Bios/PUAE/kick33180.A500, SDCARD_ROOT/Bios/PUAE/kick34005.A500, SDCARD_ROOT/Bios/PUAE/kick34005.CDTV, SDCARD_ROOT/Bios/PUAE/kick37175.A500, SDCARD_ROOT/Bios/PUAE/kick37350.A600, SDCARD_ROOT/Bios/PUAE/kick39106.A1200, SDCARD_ROOT/Bios/PUAE/kick39106.A4000, SDCARD_ROOT/Bios/PUAE/kick40060.CD32, SDCARD_ROOT/Bios/PUAE/kick40060.CD32.ext, SDCARD_ROOT/Bios/PUAE/kick40063.A600, SDCARD_ROOT/Bios/PUAE/kick40068.A1200, SDCARD_ROOT/Bios/PUAE/kick40068.A4000 |
 | PC Engine | PCE | syscard3.pce | SDCARD_ROOT/Bios/PCE/syscard3.pce |
 | Pokémon Mini | PKM | bios.min | SDCARD_ROOT/Bios/PKM/bios.min |

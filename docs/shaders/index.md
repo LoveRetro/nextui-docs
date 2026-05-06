@@ -5,25 +5,37 @@
 | Task | What to do |
 |---|---|
 | Use a built-in shader | Open a game, press `Menu`, then go to `Options` → `Shaders`. |
-| Add a loose shader file | Copy the `.glsl` file to `SDCARD_ROOT/Shaders/`. |
+| Add a loose shader file | Copy the `.glsl` file to `SDCARD_ROOT/Shaders/glsl/`. |
+| Add a shader preset | Copy the `.cfg` preset file to `SDCARD_ROOT/Shaders/`. |
 | Use shader parameter presets | NextUI v6.10.0 and newer can load shader parameter values from `.cfg` preset files. |
 | Use `.glsp` presets | `.glsp` preset files are not supported. Use `.cfg` presets instead. |
 
-## Where custom shaders go
+## Where shader files go
 
-For simple custom shaders, place `.glsl` files in:
+NextUI loads files from two distinct locations.
 
-```text
-SDCARD_ROOT/Shaders/
-```
-
-Or in the `glsl` subdirectory:
+Loose `.glsl` shader files belong in:
 
 ```text
 SDCARD_ROOT/Shaders/glsl/
 ```
 
-Then open a game and choose the shader from:
+Shader preset `.cfg` files belong in:
+
+```text
+SDCARD_ROOT/Shaders/
+```
+
+Example layout:
+
+```text
+Shaders/
+├── handheld-lcd.cfg
+└── glsl/
+    └── lcd3x.glsl
+```
+
+Then open a game and choose the shader or preset from:
 
 ```text
 Menu → Options → Shaders
@@ -246,7 +258,7 @@ But like I said shaders are not only used for scaling, since they are just littl
 - Distort the screen or enhance colors, etc.  
 
 **Feel free to experiment!**  
-Try different shaders, different combinations, and find the look that feels best for your games. You can download any .glsl file and place it in the `/Shaders` folder on your SD card to use it within NextUI. For shader presets, use `.cfg` files as described in the quick reference above.
+Try different shaders, different combinations, and find the look that feels best for your games. You can download any `.glsl` file and place it in the `/Shaders/glsl` folder on your SD card to use it within NextUI. For shader presets, place `.cfg` files in `/Shaders` as described in the quick reference above.
 
 **Enjoy! 🎮**
 

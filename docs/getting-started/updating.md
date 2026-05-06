@@ -1,28 +1,46 @@
 ### Updating an Existing Installation
 
 !!! warning "Back up first"
-    Updating should not delete your ROMs, saves, BIOS files, or artwork, but you should still back up the card before updating.
+    Updating should not delete your ROMs, saves, BIOS files, artwork, or Paks, but you should still back up the card before updating.
 
 !!! warning "Do not unzip `MinUI.zip`"
     Copy `MinUI.zip` to the SD-card root as a zip file. Do not extract it.
 
 ## Normal update
 
+For a normal update on an SD card that already runs NextUI, you only need to copy `MinUI.zip` back to the card root.
+
 1. Power off the device.
 2. Eject the NextUI SD card and insert it into your computer.
 3. Download the latest release archive ending in `-base.zip` from the [GitHub Releases page]({{ urls.github }}/releases).
 4. Extract the release archive on your computer.
 5. Open the extracted folder.
-6. Copy `MinUI.zip` and the `trimui/` folder to the root of your SD card.
-7. Allow your computer to merge or replace the existing `trimui/` folder.
-8. Safely eject the SD card.
-9. Insert the card into your device.
-10. Power on the device.
-11. Wait while the NextUI update screen runs. Do not power off the device during the update.
-12. When the update completes, the device can shut down. Power it on again.
+6. Copy `MinUI.zip` to the **root** of your SD card.
+7. Safely eject the SD card.
+8. Insert the card into your device.
+9. Power on the device.
+10. Wait while the NextUI update screen runs. Do not power off the device during the update.
+11. When the update completes, the device can shut down. Power it on again.
 
-## Updating a card used on another supported device
+## When you also need to recopy the `trimui/` folder
 
-If you move the same SD card to another supported TrimUI device, make sure the card has the current release's `trimui/` folder at the SD-card root.
+Most normal updates do **not** require recopying `trimui/`. Copy the current release's `trimui/` folder back to the SD-card root only when:
 
-Settings, saves, ROMs, BIOS files, artwork, and Paks live on the SD card, but device-specific settings and logs may be stored under different `.userdata/<platform>/` folders such as `.userdata/tg5040/` and `.userdata/tg5050/`.
+- you are doing a fresh install on a new or reformatted card;
+- the device boots to the stock TrimUI OS instead of NextUI;
+- the stock firmware was updated or reflashed;
+- you are moving a NextUI SD card to another supported TrimUI device for the first time;
+- a support helper specifically asks you to restore the bootstrap files.
+
+If unsure, copying both `MinUI.zip` and the current release's `trimui/` folder is a safe repair approach. The installer will behave like an update if the bootstrap pieces are already in place.
+
+## Moving an existing card to another supported device
+
+Settings, saves, ROMs, BIOS files, artwork, and Paks live on the SD card. Device-specific settings and logs live under platform-specific `.userdata/<platform>/` folders, such as:
+
+```text
+.userdata/tg5040/
+.userdata/tg5050/
+```
+
+When first using the card on another supported TrimUI device, copy the current release's `trimui/` folder to the SD-card root and keep `MinUI.zip` available so the installer can perform a repair/update pass.

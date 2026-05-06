@@ -41,6 +41,7 @@ For `NextUI-20260407-0-base.zip`, the card root should include:
 ```text
 SDCARD_ROOT/
 ├── Bios/
+├── Cheats/
 ├── MinUI.zip
 ├── Overlays/
 ├── README.txt

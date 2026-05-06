@@ -14,7 +14,7 @@
 
 ### What You Will Need
 
-- A TrimUI Brick, TrimUI Smart Pro, TrimUI Smart Pro S, or TrimUI Brick Hammer running the stock operating system.
+- A supported device running the stock operating system.
 - A fresh micro SD card from a reputable vendor (SanDisk, Samsung, etc.)
     - The size of the card depends on the size of the ROMs you plan to play
 - Software on your computer to format the SD Card
@@ -24,3 +24,4 @@
 - The latest release of NextUI from the [GitHub Repo :simple-github:]({{ urls.github }}/releases).
     - At minimum, you will need the archive ending in `-base.zip`.
     - If you want additional content, download the archive ending in `-all.zip` or the `-extras.zip`.
+- Your own ROM and BIOS files. NextUI does not include copyrighted games or BIOS files.

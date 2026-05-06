@@ -4,7 +4,7 @@
 
 # **Welcome to the NextUI Docs!**
 
-A powerful but understated CFW for TrimUI Brick & Smart Pro. [:simple-discord: Discord]({{ urls.discord }}) [:simple-github: GitHub]({{ urls.github }})
+A powerful but understated CFW for supported TrimUI devices. [:simple-discord: Discord]({{ urls.discord }}) [:simple-github: GitHub]({{ urls.github }})
 
 NextUI is a custom firmware for the TrimUI Brick, TrimUI Smart Pro, and TrimUI Smart Pro S retro handhelds. It keeps the simple launcher style of MinUI while adding device-specific features such as Wi-Fi, artwork, shaders, overlays, LEDs, a game switcher, game-time tracking, Paks, and RetroAchievements.
 

@@ -92,6 +92,8 @@ Check:
 5. Update NextUI.
 6. Check logs.
 
+For community Paks, PortMaster, and standalone emulators, do not assume built-in save/resume/menu behavior applies.
+
 Logs are in hidden platform folders:
 
 ```text

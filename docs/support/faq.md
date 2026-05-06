@@ -34,7 +34,13 @@ Use this guide:
 | Device boots to the stock Trimui OS instead of NextUI                                   |              Yes |                            Yes |
 | Stock Trimui firmware was updated or reflashed                                          |              Yes |                            Yes |
 
-To install, update, or repair NextUI, download the latest NextUI release and copy the needed files to the **root of the SD card**. For a normal NextUI update, you usually only need to copy `MinUI.zip`; you do not need to replace the `trimui` folder unless your encounter issues booting into NextUI after the update.
+To install, update, or repair NextUI, download the latest NextUI release and copy the needed files to the **root of the SD card**.
+
+For a normal NextUI update you only need to copy `MinUI.zip`. You do not need to replace the `trimui` folder unless:
+
+- the device is booting the stock TrimUI OS instead of NextUI;
+- the stock firmware was reflashed or updated;
+- you are moving the card to another supported TrimUI device for the first time.
 
 After a successful install or update, `MinUI.zip` will be removed automatically. That is normal. Adding `MinUI.zip` or the `trimui` folder again should not delete your ROMs, saves, BIOS files, artwork, or Paks; it only restores the launch files used to start NextUI.
 

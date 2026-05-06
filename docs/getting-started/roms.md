@@ -112,17 +112,70 @@ If you disable all visible folders under 'Roms', the 'Collections' folders conte
 
 ---
 
-### Display names
+### Display names with `map.txt`
 
-Certain (unsupported arcade) cores require roms to use arcane file names. You can override the display name used throughout NextUI by creating a map.txt in the same folder as the files you want to rename. One line per file, `rom.ext` followed by a single tab followed by `Display Name`. You can hide a file by adding a `.` at the beginning of the display name. eg. The 'Collections' folder needs its own map.txt file as well.
+Some cores (especially arcade) require ROMs to use arcane filenames. NextUI lets you override the **display name** shown in the menu without renaming the file on disk by adding a `map.txt` file.
+
+#### Format
+
+`map.txt` is a plain-text file. Each line is one mapping:
 
 ```
-neogeo.zip  .Neo Geo Bios
-mslug.zip   Metal Slug
-sf2.zip	    Street Fighter II
+filename.ext<TAB>Display Name
 ```
 
-`map.txt` changes the name shown in the menu. It does not rename the ROM file on disk. This is important for arcade games because the emulator still needs the original ZIP filename.
+- The two columns are separated by a single tab character (not spaces).
+- Empty lines are ignored.
+- A display name beginning with `.` hides the entry from the menu (useful for BIOS files such as `neogeo.zip`).
+- The mapping changes only what the menu shows; the file on disk keeps its original filename, which is what the emulator actually loads.
+
+Example contents of a `map.txt` placed inside an arcade ROM folder:
+
+```
+neogeo.zip	.Neo Geo Bios
+mslug.zip	Metal Slug
+sf2.zip	Street Fighter II
+```
+
+#### Where `map.txt` is read from
+
+NextUI looks for `map.txt` in three different locations, depending on what you want to rename:
+
+| Location | What it renames |
+|---|---|
+| `Roms/<System Folder>/map.txt` | Individual ROM files inside that system folder. |
+| `Collections/map.txt` | The collection text files listed in the Collections menu. |
+| `Roms/map.txt` | The top-level system folders themselves (the entries that show up on the home screen). |
+
+The `Roms/<System Folder>/map.txt` form is the most common. The Collections form is needed if you want to rename or hide entries shown in the Collections list. The `Roms/map.txt` form lets you customize the names of the system entries on the main menu without renaming the underlying folders (which would break the emulator tag mapping).
+
+#### Example: hide Neo Geo BIOS from the arcade menu
+
+```text
+Roms/Arcade (FBN)/
+├── map.txt
+├── neogeo.zip
+├── mslug.zip
+└── sf2.zip
+```
+
+`Roms/Arcade (FBN)/map.txt`:
+
+```
+neogeo.zip	.Neo Geo Bios
+mslug.zip	Metal Slug
+sf2.zip	Street Fighter II
+```
+
+#### Example: customize the home-screen system names
+
+```
+Game Boy Advance (GBA)	GBA
+Super Nintendo Entertainment System (SFC)	SNES
+Sony PlayStation (PS)	PlayStation
+```
+
+Place this file at `Roms/map.txt`. The folders on disk keep their `(GBA)`, `(SFC)`, and `(PS)` tags, so the emulator mapping is preserved.
 
 ---
 
