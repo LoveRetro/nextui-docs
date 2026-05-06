@@ -37,7 +37,7 @@ To take a screenshot, open the in-game menu with `Menu`, navigate to Controls or
 
 ## FN / mute switch
 
-See [LEDs, Power, Sleep, and Clock](../customizing/power-leds-clock.md#fn--mute-switch) for FN/mute switch configuration.
+See [LEDs, Power, Sleep, and Clock](../customizing/power-leds-clock.md#fn-mute-switch) for FN/mute switch configuration.
 
 ## Sleep behavior
 

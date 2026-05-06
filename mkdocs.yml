@@ -107,13 +107,13 @@ nav:
       - Overlays: customizing/overlays.md
       - Shaders: shaders/index.md
       - LEDs, Power, and Clock: customizing/power-leds-clock.md
-      - Custom Boot Logo: customizing/theming/custom-boot-logo.md
-      - Emulator Icons: customizing/theming/emulator-icons.md
-      - Quick Menu Theme: customizing/theming/quick-menu-theme.md
+      - Custom Boot Logo: customizing/custom-boot-logo.md
+      - Emulator Icons: customizing/emulator-icons.md
+      - Quick Menu Theme: customizing/quick-menu-theme.md
       - Collections: customizing/custom-categories.md
   - Support:
       - Frequently Asked Questions: support/faq.md
-      - Troubleshooting: support/troubleshooting.md
+      - General Troubleshooting: support/troubleshooting.md
   - Development: development/build.md
   - NextUI Homepage:
       - index.md
