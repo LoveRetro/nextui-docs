@@ -52,3 +52,7 @@ The table below lists the extras emulators shipped in the Extras ZIP.
 | [SUPA](emulator-notes.md#super-nintendo-snes9x-vs-supafaust) | Super Nintendo | mednafen_supafaust |
 | VB | Virtual Boy | mednafen_vb |
 | VIC | Commodore VIC-20 | vice_xvic |
+
+## Additional libretro cores and standalone emulators
+
+In addition to the ones mentioned above, the NextUI community maintains plenty of extra cores and emulators on the [Pak Store](../pak-store.md).
