@@ -1,4 +1,10 @@
 .idea
 *.iml
+
+.venv/
+site/
+
 /marketing/node_modules/
+/marketing/out/
+/marketing/.next/
 /docs/_marketing/*

@@ -1,18 +1,17 @@
 ---
 hide:
-  - navigation
   - toc
 ---
 
-# NextUI Community Paks
+# Pak Store
 
-NextUI allows you to add functionality to the system in the form of Paks.
+Pak Store lets you browse and install compatible Paks directly on the device.
 
-The NextUI Community has created these amazing paks which are available to download right on your device through the Pak Store.
+For general Pak concepts, save-sync guidance, PortMaster notes, and Pak troubleshooting, see [Paks](paks.md).
 
-Simply connect to Wi-Fi, select Pak Store from the tools menu and try them out!
+---
 
-Interested in making a pak? Community member Jose Diaz-Gonzalez has put together a [fantastic guide](https://josediazgonzalez.com/2025/06/16/writing-a-pak-for-the-minui-and-nextui-launchers/).
+## Browse Paks
 
 <style>
 .pak-store-container {
@@ -355,6 +354,11 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
     const STOREFRONT_URL = 'https://raw.githubusercontent.com/LoveRetro/nextui-pak-store/refs/heads/gh-pages/storefront.json';
     const OFFICIAL_PAKS = ['Pak Store', 'Over The Air Updater'];
     const SUPPORTED_PLATFORMS = ['tg5040', 'tg5050', 'my355'];
+    const PLATFORM_LABELS = {
+        tg5040: 'Trimui Smart Pro / Brick',
+        tg5050: 'Trimui Smart Pro S',
+        my355: 'Miyoo Flip'
+    };
 
     let allPaks = [];
     let currentFilters = { type: 'all', category: 'all', platform: 'all', search: '' };
@@ -383,6 +387,10 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
     function getSupportedPlatforms(pak) {
         if (!pak.platforms) return [];
         return pak.platforms.filter(p => SUPPORTED_PLATFORMS.includes(p.toLowerCase()));
+    }
+
+    function getPlatformLabel(platform) {
+        return PLATFORM_LABELS[platform.toLowerCase()] || platform;
     }
 
     function filterPaks(paks) {
@@ -432,7 +440,7 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
                 ${pak.large_pak ? '<div class="pak-badges"><span class="pak-badge large">Large</span></div>' : ''}
                 <p class="pak-description">${escapeHtml(pak.description || 'No description available.')}</p>
                 ${categories.length ? `<div class="pak-categories">${categories.map(c => `<span class="pak-category">${escapeHtml(c)}</span>`).join('')}</div>` : ''}
-                ${platforms.length ? `<div class="pak-platforms">${platforms.map(p => `<span class="pak-platform">${escapeHtml(p)}</span>`).join('')}</div>` : ''}
+                ${platforms.length ? `<div class="pak-platforms">${platforms.map(p => `<span class="pak-platform">${escapeHtml(getPlatformLabel(p))}</span>`).join('')}</div>` : ''}
                 <a href="${escapeHtml(pak.repo_url)}" target="_blank" class="pak-link">View on GitHub</a>
             </div>
         `;
@@ -503,7 +511,7 @@ Interested in making a pak? Community member Jose Diaz-Gonzalez has put together
             btn.className = 'pak-filter-btn';
             btn.dataset.filter = 'platform';
             btn.dataset.value = platform;
-            btn.textContent = platform.toUpperCase();
+            btn.textContent = getPlatformLabel(platform);
             platformContainer.appendChild(btn);
         });
 

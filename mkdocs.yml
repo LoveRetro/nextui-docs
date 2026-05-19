@@ -81,13 +81,39 @@ plugins:
 
 nav:
   - Docs Home: docs.md
-  - Usage: usage.md
-  - Customizing: customizing.md
-  - Paks: pak-store.md
-  - Shaders:
-      - shaders/index.md
+  - Getting Started:
+      - Overview: usage.md
+      - Prerequisites: getting-started/index.md
+      - Installation: getting-started/installation.md
+      - Updating: getting-started/updating.md
+      - Controls and Shortcuts: getting-started/controls.md
+      - ROMs and Arcade: getting-started/roms.md
+      - Supported Emulators: getting-started/emulators.md
+      - Emulator Notes: getting-started/emulator-notes.md
+      - BIOS: getting-started/bios.md
+      - Saves and Migration: getting-started/managing-saves.md
+      - RetroAchievements: getting-started/retroachievements.md
+      - Cheats: getting-started/cheats.md
+  - Paks:
+      - Overview: paks.md
+      - Pak Store: pak-store.md
+      - File Transfer: paks/file-transfer.md
+      - PortMaster: paks/portmaster.md
+      - Pak Troubleshooting: paks/troubleshooting.md
+      - Making Paks: paks/making-paks.md
+  - Customizing:
+      - Overview: customizing.md
+      - Artwork: customizing/game-artwork.md
+      - Overlays: customizing/overlays.md
+      - Shaders: shaders/index.md
+      - LEDs, Power, and Clock: customizing/power-leds-clock.md
+      - Custom Boot Logo: customizing/custom-boot-logo.md
+      - Emulator Icons: customizing/emulator-icons.md
+      - Quick Menu Theme: customizing/quick-menu-theme.md
+      - Collections: customizing/custom-categories.md
   - Support:
       - Frequently Asked Questions: support/faq.md
+      - General Troubleshooting: support/troubleshooting.md
   - Development: development/build.md
   - NextUI Homepage:
       - index.md

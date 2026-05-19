@@ -4,89 +4,70 @@
 
 # **Welcome to the NextUI Docs!**
 
-A powerful but understated CFW for TrimUI Brick & Smart Pro. [:simple-github:]({{ urls.github }})
+A powerful but understated CFW for supported TrimUI devices. [:simple-discord: Discord]({{ urls.discord }}) [:simple-github: GitHub]({{ urls.github }})
 
-[Installation Instructions](usage.md){ .md-button .md-button--primary }
+NextUI is a custom firmware for the TrimUI Brick, TrimUI Smart Pro, and TrimUI Smart Pro S retro handhelds. It keeps the simple launcher style of MinUI while adding device-specific features such as Wi-Fi, artwork, shaders, overlays, LEDs, a game switcher, game-time tracking, Paks, and RetroAchievements.
+
+[Installation Instructions](getting-started/installation.md){ .md-button .md-button--primary }
 
 ---
 
-## About NextUI
+## Start here
 
-NextUI is a custom firmware (CFW) for the TrimUI Brick & Smart Pro retro gaming handhelds.
+New to NextUI? Start with these pages:
 
-It was started by [@ro8inmorgan](https://github.com/ro8inmorgan) as a fork of the popular MinUI CFW so they could
-implement changes that were determined to be outside the scope of the original project.
+- [Installation](getting-started/installation.md) for fresh SD-card setup.
+- [Updating](getting-started/updating.md) for existing cards.
+- [ROMs and Arcade](getting-started/roms.md) for exact folder names and file-placement rules.
+- [Troubleshooting](support/troubleshooting.md) if the device boots to stock OS, only shows Tools, or a game will not launch.
+- [Paks](paks.md) and [Pak Store](pak-store.md) for optional tools, emulators, PortMaster, file transfer, and save-sync utilities.
 
-NextUI quickly took off and became especially popular on the TrimUI devices.
+---
+
+## Supported devices
+
+See [Prerequisites](getting-started/index.md) for the list of supported devices and requirements.
 
 ---
 
 ## Features
 
-NextUI officially supports the TrimUI Brick and TrimUI Smart Pro gaming handhelds.
+NextUI features a rebuilt emulation engine and many handheld-focused additions:
 
-It features a rebuilt emulation engine and tons of added features outlined below.<br />
-<small>Note: For other devices we recommend checking out [MinUI](https://github.com/shauninman/MinUI).</small>
-
-- Fixed both screen tearing and sync stutter problems of MinUI by rebuilding the emulator engine core
-- Game switcher menu (OnionOS style) by [@frysee](https://github.com/frysee)
-- High quality audio, due to advanced resampling engine
-  using [libsamplerate](https://github.com/libsndfile/libsamplerate) (with quality/performance setting per emulator)
-- Much lower latency (average 20ms, 1 frame of 60fps)
-- Shaders!
-- Fully OpenGL/GPU based for faster performance!
-- Native WiFi and Bluetooth support
-- System-wide support for USB-C DACs via OTG port
-- Game art/media support
-- Game time tracker
-- Cheats support
-- Overlays support
-- Broader zip file support (BZ2, LZMA)
-- Dynamic CPU speed scaling (keeps your device cool and extends battery life, but gives the performance right when
-  needed)
-- Custom bootlogos contributed by [@SolvalouArt](https://bsky.app/profile/solvalouart.bsky.social)
-- Color and font settings to customize the NextUI interface
-- Menu animations
-- LED control, change colors, effects, brightness
-- LED indicators, low battery, stand by, charging (brightness can be set seperately)
-- Haptic feedback in the menu by [@ExonakiDev](https://github.com/exonakidev)
-- Ambient LED mode—the LEDS act like ambient light TVs for extra immersion. Configurable per emulator
-- Display controls (color temperature, brightness, contrast, saturation, exposure)
-- Configurable FN/Mute switch that can trigger a "night mode"—toggle between two sets of custom display settings!
-- Dpad/Analog stick/Turbo toggle via FN switch
-- Support for automatic NTP time synchronization with timezones and realtime clock (RTC)
-- Deep Sleep mode, gives instant ON and avoids the overheat bug on the Brick
-  by [@zhaofengli](https://github.com/zhaofengli)
-- Customizable screen and sleep timeout (Including "Never")
-- Battery monitoring, including history graph and time left prediction
-- Scrolling animated titles for longer game names
-- Updated and optimized build emulation cores
-- Rumble strength fixed and is now variable as used by the games
-- FBNeo arcade screen rotation
-- PAL mode support
-- Next font supports CJK for JP/CN/etc. ROM names
-- Lot of other smaller fixes and optimizations
+- Rebuilt emulator core with screen-tearing and sync-stutter fixes, OpenGL/GPU rendering, dynamic CPU scaling, optimized cores, and low-latency audio/video through [libsamplerate](https://github.com/libsndfile/libsamplerate).
+- Game switcher by [@frysee](https://github.com/frysee), scrolling titles, menu animations, and transition/color polish by [@radther](https://github.com/radther).
+- Shaders and overlays, including shader presets/options, scanline defaults, PAL support, core-option categories, and compatibility work by [@bSr43](https://github.com/bSr43), [@DrFlarp](https://github.com/DrFlarp), and [@Pobega](https://github.com/Pobega).
+- Rewind support and power-off protection by [@Helaas](https://github.com/Helaas).
+- Deep sleep and suspend support by [@zhaofengli](https://github.com/zhaofengli), with suspend fixes by [@DrFlarp](https://github.com/DrFlarp), plus configurable screen and sleep timeouts.
+- RetroAchievements integration and in-game notifications by [@clintonium-119](https://github.com/clintonium-119).
+- Wi-Fi, Bluetooth, USB-C DAC support, automatic NTP time synchronization, timezone handling, and RTC support.
+- Screenshots, Doom/PRBOOM support, Atari extras, and build/runtime improvements by [@josegonzalez](https://github.com/josegonzalez).
+- Expanded extra emulator Paks by [@bSr43](https://github.com/bSr43) and [@cobaltgit](https://github.com/cobaltgit).
+- Pak Store by [@brandonkowalski](https://github.com/brandonkowalski), plus community Paks for extra emulators, tools, PortMaster, file transfer, sync utilities, and more.
+- Game artwork and media, game-time tracking, battery history, and battery time-left prediction.
+- Cheats, broader ZIP support including BZ2/LZMA, and FBNeo screen rotation.
+- Custom boot logos contributed by [@SolvalouArt](https://bsky.app/profile/solvalouart.bsky.social).
+- Haptic feedback and rumble in the interface by [@ExonakiDev](https://github.com/exonakidev).
+- Display controls for color temperature, brightness, contrast, saturation, and exposure.
+- Configurable FN/Mute behavior, including night-mode display toggles and D-pad/analog/turbo switching.
+- LED colors, effects, brightness, status indicators, and ambient LED mode on supported devices.
+- CJK-capable Next font for Japanese, Chinese, and other ROM names.
 
 ---
 
-# Future Plans
+## About NextUI
 
-- [ ] RetroAchievements
-- [ ] Configurable function buttons
-- [ ] More compatibility testing with different emulators and fix / improve if necessary
+NextUI was started by Robin [@ro8inmorgan](https://github.com/ro8inmorgan) and [@frysee](https://github.com/frysee) as a fork of the popular MinUI CFW by [@shauninman](https://github.com/shauninman/MinUI).
 
 ---
 
 ## Discord Community
 
-NextUI has a vibrant Discord community. Here you can talk about new and upcoming features, ask for help and contribute
-to the community.
+NextUI has a vibrant Discord community. Here you can talk about new and upcoming features, ask for help, and contribute to the community.
 
-Many of our members produce custom Paks add to the functionality of NextUI.
+Many members produce custom Paks, overlays, and themes that add functionality to NextUI.
 
-The more artistically inclined among us make custom emulator overlays and themes.
-
-Don't be shy, come join us! |  [:simple-discord: Discord Invite]({{ urls.discord }})
+Don't be shy, come join us. [:simple-discord: Discord Invite]({{ urls.discord }})
 
 ---
 
@@ -94,6 +75,4 @@ Don't be shy, come join us! |  [:simple-discord: Discord Invite]({{ urls.discord
 
 Many minds make us whole. NextUI is a product of its community.
 
-Special thanks to [@shauninman](https://github.com/shauninman) for their original work on MinUI and
-to [@ro8inmorgan](https://github.com/ro8inmorgan) and [@frysee](https://github.com/frysee) for their tireless efforts
-improving the core NextUI experience.
+Special thanks to [@shauninman](https://github.com/shauninman) for MinUI, and to every contributor building firmware features, Paks, overlays, themes, testing notes, and support resources.

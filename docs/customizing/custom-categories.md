@@ -32,62 +32,62 @@ SD_CARD
 │  │  ├─ bg.png                                *Recently Played List Menu Background
 ├─ Roms/
 │  ├─ .media/
-│  │  ├─ 01)Handheld (GB).png          		*Main Menu Handheld Icon (match first folder in group)
-│  │  ├─ 02)Console (FC).png 			*Main Menu Console Icon (match first folder in group)
-│  │  ├─ 03)Arcade (FBN).png 			*Main Menu Console Icon
+│  │  ├─ 01)Handheld (GB).png                  *Main Menu Handheld Icon (match first folder in group)
+│  │  ├─ 02)Console (FC).png                   *Main Menu Console Icon (match first folder in group)
+│  │  ├─ 03)Arcade (FBN).png                   *Main Menu Console Icon
 │  │
-│  ├─ 01)Handheld (GB)/				*Uses (GB) to store systems using the GB emulator
+│  ├─ 01)Handheld (GB)/                        *Uses (GB) to store systems using the GB emulator
 │  │  ├─ .media/
-│  │  │  ├─ 01)Game Boy.png			*GB system icon
-│  │  │  ├─ bg.png				*Background used when highlighting Handheld in the main menu (only required for first folder in group)
+│  │  │  ├─ 01)Game Boy.png                    *GB system icon
+│  │  │  ├─ bg.png                             *Background used when highlighting Handheld in the main menu (only required for first folder in group)
 │  │  │
-│  │  ├─ 01)Game Boy               		*The number here sorts the systems in the Handheld screen
+│  │  ├─ 01)Game Boy                           *The number here sorts the systems in the Handheld screen
 │  │  │  ├─ .media/
-│  │  │  │  ├─ bg.png				*Background for GB that will be shown in the Handheld menu
-│  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
-│  │  │  ├─ My Awesome Game.gb			*Rom file
+│  │  │  │  ├─ bg.png                          *Background for GB that will be shown in the Handheld menu
+│  │  │  │  ├─ My Awesome Game.png             *Rom boxart
+│  │  │  ├─ My Awesome Game.gb                 *Rom file
 │  │
-│  ├─ 01)Handheld (MGBA)/			*Uses (MGBA) to store systems using the MGBA emulator
+│  ├─ 01)Handheld (MGBA)/                      *Uses (MGBA) to store systems using the MGBA emulator
 │  │  ├─ .media/
-│  │  │  ├─ 02)Game Boy Advance.png		*GBA system icon
+│  │  │  ├─ 02)Game Boy Advance.png            *GBA system icon
 │  │  │
-│  │  ├─ 02)Game Boy Advance                	*The number here sorts the systems in the Handheld screen
+│  │  ├─ 02)Game Boy Advance                   *The number here sorts the systems in the Handheld screen
 │  │  │  ├─ .media/
-│  │  │  │  ├─ bg.png				*Background for GBA that will be shown in the Handheld menu
-│  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
-│  │  │  ├─ My Awesome Game.gba			*Rom file
+│  │  │  │  ├─ bg.png                          *Background for GBA that will be shown in the Handheld menu
+│  │  │  │  ├─ My Awesome Game.png             *Rom boxart
+│  │  │  ├─ My Awesome Game.gba                *Rom file
 │  │
 │  ├─ 02)Console (FC)/
 │  │  ├─ .media/
-│  │  │  ├─ 01)NES.png				*NES system icon
+│  │  │  ├─ 01)NES.png                         *NES system icon
 │  │  │
-│  │  ├─ 01)NES              			*The number here sorts the systems in the Console screen
+│  │  ├─ 01)NES                                *The number here sorts the systems in the Console screen
 │  │  │  ├─ .media/
-│  │  │  │  ├─ bg.png				*Background for NES shown in console menu
-│  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
-│  │  │  ├─ My Awesome Game.nes			*Rom file
+│  │  │  │  ├─ bg.png                          *Background for NES shown in console menu
+│  │  │  │  ├─ My Awesome Game.png             *Rom boxart
+│  │  │  ├─ My Awesome Game.nes                *Rom file
 │  │
 │  ├─ 02)Console (MD)/
 │  │  ├─ .media/
-│  │  │  ├─ 01)Sega Genesis.png			*Sega Genesis system icon shown in Console menu
-│  │  │  ├─ 01)Sega Master System.png		*Sega Master system icon shown in Console menu
+│  │  │  ├─ 01)Sega Genesis.png                *Sega Genesis system icon shown in Console menu
+│  │  │  ├─ 01)Sega Master System.png          *Sega Master system icon shown in Console menu
 │  │  │
-│  │  ├─ 02)Sega Genesis                	*The number here sorts the systems in the Console screen
+│  │  ├─ 02)Sega Genesis                       *The number here sorts the systems in the Console screen
 │  │  │  ├─ .media/
-│  │  │  │  ├─ bg.png				*Background for Sega Genesis shown in Console menu
-│  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
-│  │  │  ├─ My Awesome Game.md			*Rom file
+│  │  │  │  ├─ bg.png                          *Background for Sega Genesis shown in Console menu
+│  │  │  │  ├─ My Awesome Game.png             *Rom boxart
+│  │  │  ├─ My Awesome Game.md                 *Rom file
 │  │  │
-│  │  ├─ 03)Sega Master System               	*The number here sorts the systems in the Console screen
+│  │  ├─ 03)Sega Master System                 *The number here sorts the systems in the Console screen
 │  │  │  ├─ .media/
-│  │  │  │  ├─ bg.png				*Background for Sega Master System shown in Console menu
-│  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
-│  │  │  ├─ My Awesome Game.sms			*Rom file
+│  │  │  │  ├─ bg.png                          *Background for Sega Master System shown in Console menu
+│  │  │  │  ├─ My Awesome Game.png             *Rom boxart
+│  │  │  ├─ My Awesome Game.sms                *Rom file
 │  │
 │  ├─ 03)Arcade(FBN)/
 │  │  ├─ .media/
-│  │  │  ├─ bg.png				*Background for FBN that will be shown in the Main menu
-│  │  │  ├─ My Awesome Game.png      		*Rom boxart
+│  │  │  ├─ bg.png                             *Background for FBN that will be shown in the Main menu
+│  │  │  ├─ My Awesome Game.png                *Rom boxart
 │  │  ├─ My Awesome Game.zip
 ```
 
