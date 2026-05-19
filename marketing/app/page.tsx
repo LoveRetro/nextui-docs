@@ -1,6 +1,6 @@
 import {Button} from "@/components/ui/button"
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
-import {Battery, Clock, Cpu, Gamepad2, Palette, Zap} from "lucide-react"
+import {Battery, Clock, Cpu, Gamepad2, Package, Palette, Trophy, Zap} from "lucide-react"
 import Image from "next/image"
 
 export default function Page() {
@@ -82,10 +82,10 @@ export default function Page() {
                                 imageUrl="/images/game-art.png"
                             />
                             <FeatureCard
-                                icon={<Palette className="w-12 h-12 text-[#9b2256]"/>}
-                                title="Customization"
-                                description="Personalize your UI with backgrounds, fonts, and LED controls."
-                                imageUrl="/images/led-control.png"
+                                icon={<Trophy className="w-12 h-12 text-[#9b2256]"/>}
+                                title="Retroachievements"
+                                description="Track your gaming achievements - including offline support!"
+                                imageUrl="/images/retroachievements.png"
                             />
                             <FeatureCard
                                 icon={<Clock className="w-12 h-12 text-[#9b2256]"/>}
@@ -94,16 +94,28 @@ export default function Page() {
                                 imageUrl="/images/game-tracker.png"
                             />
                             <FeatureCard
-                                icon={<Cpu className="w-12 h-12 text-[#9b2256]"/>}
-                                title="Advanced Features"
-                                description="Our emulator cores have cheats, overlays, shaders and more."
-                                imageUrl="/images/overlay.png"
-                            />
-                            <FeatureCard
                                 icon={<Battery className="w-12 h-12 text-[#9b2256]"/>}
                                 title="Power Management"
                                 description="Deep Sleep mode and battery monitoring for extended play sessions."
                                 imageUrl="/images/battery.png"
+                            />
+                            <FeatureCard
+                                icon={<Palette className="w-12 h-12 text-[#9b2256]"/>}
+                                title="Customization"
+                                description="Personalize your UI with backgrounds, fonts, and LED controls."
+                                imageUrl="/images/led-control.png"
+                            />
+                            <FeatureCard
+                                icon={<Package className="w-12 h-12 text-[#9b2256]"/>}
+                                title="Community Driven"
+                                description="Endless community paks that enhance your gaming experience."
+                                imageUrl="/images/paks.png"
+                            />
+                            <FeatureCard
+                                icon={<Cpu className="w-12 h-12 text-[#9b2256]"/>}
+                                title="Advanced Features"
+                                description="Our emulator cores have cheats, overlays, shaders and more."
+                                imageUrl="/images/overlay.png"
                             />
                         </div>
                     </div>
@@ -113,8 +125,9 @@ export default function Page() {
                     <div className="container mx-auto px-4 text-center">
                         <h2 className="text-3xl font-bold mb-8">Compatible Devices</h2>
                         <div className="flex flex-wrap justify-center gap-8 items-end">
-                            <DeviceCard name="TrimUI Brick" imageUrl="/images/trimui-brick.png" width={250}/>
-                            <DeviceCard name="TrimUI Smart Pro" imageUrl="/images/trimui-smart-pro.png" width={500}/>
+                            <DeviceCard name="TrimUI Brick" imageUrl="/images/trimui-brick.png" width={200}/>
+                            <DeviceCard name="TrimUI Smart Pro" imageUrl="/images/trimui-smart-pro.png" width={400}/>
+                            <DeviceCard name="TrimUI Smart Pro S" imageUrl="/images/trimui-smart-pro-s.png" width={400}/>
                         </div>
                     </div>
                 </section>
