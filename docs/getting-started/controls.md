@@ -9,6 +9,7 @@ This page lists common NextUI controls. Some shortcuts can be changed per emulat
 | Adjust brightness | Hold `Start` and press `Volume Up` or `Volume Down` |
 | Adjust color temperature | Hold `Select` and press `Volume Up` or `Volume Down` |
 | Open game switcher | Short press `Select` |
+| Open quick menu | Short press `Menu` |
 
 ## In game
 
