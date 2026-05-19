@@ -1,6 +1,6 @@
 import {Button} from "@/components/ui/button"
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
-import {Battery, Clock, Cpu, Gamepad2, Package, Palette, Trophy, Zap} from "lucide-react"
+import {Battery, Clock, CloudDownload, Cpu, Gamepad2, Package, Palette, Trophy, Zap} from "lucide-react"
 import Image from "next/image"
 
 export default function Page() {
@@ -116,6 +116,12 @@ export default function Page() {
                                 title="Advanced Features"
                                 description="Our emulator cores have cheats, overlays, shaders and more."
                                 imageUrl="/images/overlay.png"
+                            />
+                            <FeatureCard
+                                icon={<CloudDownload className="w-12 h-12 text-[#9b2256]"/>}
+                                title="Over-the-Air Updates"
+                                description="Install updates over Wifi, no SD card juggling required."
+                                imageUrl="/images/ota.png"
                             />
                         </div>
                     </div>
