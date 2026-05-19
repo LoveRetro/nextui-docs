@@ -18,7 +18,7 @@ New to NextUI? Start with these pages:
 
 - [Installation](getting-started/installation.md) for fresh SD-card setup.
 - [Updating](getting-started/updating.md) for existing cards.
-- [ROMs, BIOS, and Arcade](getting-started/roms.md) for exact folder names and file-placement rules.
+- [ROMs and Arcade](getting-started/roms.md) for exact folder names and file-placement rules.
 - [Troubleshooting](support/troubleshooting.md) if the device boots to stock OS, only shows Tools, or a game will not launch.
 - [Paks](paks.md) and [Pak Store](pak-store.md) for optional tools, emulators, PortMaster, file transfer, and save-sync utilities.
 

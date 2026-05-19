@@ -2,7 +2,7 @@
 
 NextUI's main install ZIP includes a small base set of emulators bundled with the firmware. The Extras ZIP shipped alongside each release adds many more cores, which you can install with [file-transfer Paks](../paks/file-transfer.md) or through the [Pak Store](../pak-store.md).
 
-For per-system setup notes, see [Emulator Notes](emulator-notes.md). For arcade, Neo Geo, and Doom-specific setup, see [ROMs, BIOS, and Arcade](roms.md).
+For per-system setup notes, see [Emulator Notes](emulator-notes.md). For arcade, Neo Geo, and Doom-specific setup, see [ROMs and Arcade](roms.md).
 
 ## Base emulators
 

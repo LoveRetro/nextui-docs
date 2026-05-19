@@ -62,7 +62,7 @@ Put ROMs inside a tagged folder under `Roms/`, for example:
 Roms/Game Boy (GB)/Tetris (World).gb
 ```
 
-See [ROMs, BIOS, and Arcade](../getting-started/roms.md) and [Troubleshooting](troubleshooting.md#the-menu-only-shows-tools).
+See [ROMs and Arcade](../getting-started/roms.md) and [Troubleshooting](troubleshooting.md#the-menu-only-shows-tools).
 
 ---
 

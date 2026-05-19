@@ -18,6 +18,6 @@ See [Prerequisites](getting-started/index.md) for the list of supported devices 
 
 - [Installation](getting-started/installation.md) — fresh SD-card setup.
 - [Updating](getting-started/updating.md) — updating an existing installation.
-- [ROMs, BIOS, and Arcade](getting-started/roms.md) — exact folder names and file-placement rules.
+- [ROMs and Arcade](getting-started/roms.md) — exact folder names and file-placement rules.
 - [Saves and Migration](getting-started/managing-saves.md) — in-game saves, save states, and migrating cards.
 - [Cheats](getting-started/cheats.md) — cheat file placement and troubleshooting.
