@@ -355,7 +355,7 @@ For general Pak concepts, save-sync guidance, PortMaster notes, and Pak troubles
     const OFFICIAL_PAKS = ['Pak Store', 'Over The Air Updater'];
     const SUPPORTED_PLATFORMS = ['tg5040', 'tg5050', 'my355'];
     const PLATFORM_LABELS = {
-        tg5040: 'Trimui Smart Pro / Brick',
+        tg5040: 'Trimui Smart Pro / Brick / Brick Pro',
         tg5050: 'Trimui Smart Pro S',
         my355: 'Miyoo Flip'
     };
