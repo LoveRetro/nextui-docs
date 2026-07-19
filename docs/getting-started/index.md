@@ -2,7 +2,11 @@
 
 !!! warning "Read before continuing!"
 
-    NextUI **officially supports** the TrimUI Brick, TrimUI Smart Pro, TrimUI Smart Pro S, and the TrimUI Brick Hammer (which is functionally the same as the TrimUI Brick).
+    NextUI **officially supports** 
+    - TrimUI Brick (and Hammer, which is functionally the same)
+    - TrimUI Smart Pro
+    - TrimUI Smart Pro S
+    - TrimUI Brick Pro
 
     The steps outlined here only apply to these supported devices running the stock operating system.
 
