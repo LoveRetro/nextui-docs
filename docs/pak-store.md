@@ -353,11 +353,12 @@ For general Pak concepts, save-sync guidance, PortMaster notes, and Pak troubles
 (function() {
     const STOREFRONT_URL = 'https://raw.githubusercontent.com/LoveRetro/nextui-pak-store/refs/heads/gh-pages/storefront.json';
     const OFFICIAL_PAKS = ['Pak Store', 'Over The Air Updater'];
-    const SUPPORTED_PLATFORMS = ['tg5040', 'tg5050', 'my355'];
+    const SUPPORTED_PLATFORMS = ['tg5040', 'tg5050', 'my355', 'h700'];
     const PLATFORM_LABELS = {
         tg5040: 'Trimui Smart Pro / Brick',
         tg5050: 'Trimui Smart Pro S',
-        my355: 'Miyoo Flip'
+        my355: 'Miyoo Flip',
+        h700: 'Anbernic RG XX (H700)'
     };
 
     let allPaks = [];
