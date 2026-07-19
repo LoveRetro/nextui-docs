@@ -134,6 +134,7 @@ export default function Page() {
                             <DeviceCard name="TrimUI Brick" imageUrl="/images/trimui-brick.png" width={200}/>
                             <DeviceCard name="TrimUI Smart Pro" imageUrl="/images/trimui-smart-pro.png" width={400}/>
                             <DeviceCard name="TrimUI Smart Pro S" imageUrl="/images/trimui-smart-pro-s.png" width={400}/>
+                            <DeviceCard name="TrimUI Brick Pro" imageUrl="/images/trimui-brick-pro.png" width={200}/>
                         </div>
                     </div>
                 </section>
