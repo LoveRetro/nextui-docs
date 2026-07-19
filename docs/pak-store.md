@@ -18,16 +18,16 @@ For general Pak concepts, save-sync guidance, PortMaster notes, and Pak troubles
     --ps-bg: var(--md-default-bg-color);
     --ps-bg-card: var(--md-code-bg-color);
     --ps-text: var(--md-typeset-color);
-    --ps-text-muted: var(--md-default-fg-color--lighter);
-    --ps-accent: #9B2256;
+    --ps-text-muted: var(--md-default-fg-color--light);
+    --ps-accent: var(--md-accent-fg-color);
     --ps-border: var(--md-default-fg-color--lightest);
     --ps-success: #4ecca3;
-    --ps-warning: #ffc93c;
+    --ps-warning: var(--md-accent-warning);
 }
 
 .pak-store-container * {
     box-sizing: border-box;
-}
+}   
 
 .pak-filters {
     display: flex;

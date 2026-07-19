@@ -5,6 +5,7 @@
 
     --md-accent-fg-color: #9B2256;
     --md-accent-fg-color--transparent: #cccccc;
+    --md-accent-warning: #836600;
 
     --md-default-fg-color: #111111;
     --md-default-fg-color--light: #292929;
@@ -43,6 +44,7 @@
 
     --md-accent-fg-color: #9B2256;
     --md-accent-fg-color--transparent: #333333;
+    --md-accent-warning: #ffc93c;
 
     --md-default-fg-color: #eeeeee;
     --md-default-fg-color--light: #eeeeee;
