@@ -18,6 +18,8 @@ See [Installation](../getting-started/installation.md) and [Updating](../getting
 
 ## When should I add `MinUI.zip` or the `trimui` folder back to my SD card?
 
+This section applies to TrimUI devices. On Anbernic RG XX (H700) devices there is no `trimui` folder; you only need `MinUI.zip` (and `dmenu.bin` on the stock OS card's ROMS partition, see [Installation](../getting-started/installation.md#anbernic-rg-xx-h700-devices)).
+
 NextUI uses two different items on the root of the SD card:
 
 * `MinUI.zip` is the installer, updater, and repair archive. Do **not** unzip it. It lives in the `-base.zip` and `-all.zip` releases.

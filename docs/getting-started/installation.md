@@ -8,7 +8,7 @@
 
 ## What you need
 
-- A supported device: TrimUI Brick, TrimUI Smart Pro, or TrimUI Smart Pro S.
+- A supported device: a TrimUI Brick, Brick Pro, Smart Pro, or Smart Pro S, or an Anbernic RG XX (H700) device. See [Prerequisites](index.md) for the full list.
 - A microSD card formatted as FAT32 or exFAT.
 - A Master Boot Record partition table.
 - The latest NextUI release archive ending in `-base.zip` or `-all.zip`.
@@ -32,11 +32,21 @@
 12. Wait while the NextUI installation screen runs. Do not power off the device during installation.
 13. When installation is complete, the device can shut down. Power it on again.
 
+## Anbernic RG XX (H700) devices
+
+The base steps above apply, but Anbernic devices do not use the `trimui/` folder. Instead:
+
+1. Copy `MinUI.zip` (still zipped) to the root of the SD card.
+2. Copy the `dmenu.bin` file from the `h700` folder of the release to the root of the **ROMS partition** of your stock OS card.
+3. In the stock OS, set the user interface theme to **old style** (the default). NextUI will not start with "MU style 1" or "MU style 2".
+
+To uninstall NextUI and return to the stock OS, delete `dmenu.bin` again.
+
 ## What the SD-card root should look like
 
 The important part is that the release contents are copied directly to the card root, not inside another folder.
 
-For `NextUI-20260407-0-base.zip`, the card root should include:
+For `NextUI-20260407-0-base.zip`, the card root on a TrimUI device should include:
 
 ```text
 SDCARD_ROOT/
@@ -94,7 +104,8 @@ Check these first:
 
 - The card is MBR, not GPT.
 - `MinUI.zip` is on the SD-card root and is still zipped.
-- The `trimui/` folder from the release is on the SD-card root.
+- TrimUI: the `trimui/` folder from the release is on the SD-card root.
+- Anbernic: `dmenu.bin` is on the ROMS partition of the stock OS card, and the stock OS theme is set to "old style".
 - The release files are not nested inside an extra folder.
 - You safely ejected the card after copying files.
 - Try a different SD card if settings are not saving or files keep corrupting.

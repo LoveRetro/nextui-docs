@@ -37,8 +37,7 @@ export default function Page() {
                                     Next<span className="text-[#9B2256]">UI</span>: Elevate Your Handheld Gaming
                                     Experience
                                 </h1>
-                                <p className="text-xl mb-8">Custom firmware and launcher for TrimUI Brick and Smart
-                                    Pro.</p>
+                                <p className="text-xl mb-8">Custom firmware and launcher for TrimUI and Anbernic handhelds.</p>
                                 <a href="https://github.com/LoveRetro/NextUI/releases" target="_blank">
                                     <Button size="lg" className="bg-[#9b2256] hover:bg-[#8a1e4c] text-white font-bold">
                                         Download Now
@@ -130,11 +129,26 @@ export default function Page() {
                 <section className="py-16 bg-gray-100">
                     <div className="container mx-auto px-4 text-center">
                         <h2 className="text-3xl font-bold mb-8">Compatible Devices</h2>
-                        <div className="flex flex-wrap justify-center gap-8 items-end">
-                            <DeviceCard name="TrimUI Brick" imageUrl="/images/trimui-brick.png" width={200}/>
-                            <DeviceCard name="TrimUI Smart Pro" imageUrl="/images/trimui-smart-pro.png" width={400}/>
-                            <DeviceCard name="TrimUI Smart Pro S" imageUrl="/images/trimui-smart-pro-s.png" width={400}/>
-                            <DeviceCard name="TrimUI Brick Pro" imageUrl="/images/trimui-brick-pro.png" width={200}/>
+                        <h3 className="text-xl font-semibold text-gray-600 mb-4">TrimUI</h3>
+                        <div className="flex flex-wrap justify-center gap-4 mb-10">
+                            <DeviceCard name="TrimUI Brick" imageUrl="/images/trimui-brick.png"/>
+                            <DeviceCard name="TrimUI Brick Pro" imageUrl="/images/trimui-brick-pro.png"/>
+                            <DeviceCard name="TrimUI Smart Pro" imageUrl="/images/trimui-smart-pro.png"/>
+                            <DeviceCard name="TrimUI Smart Pro S" imageUrl="/images/trimui-smart-pro-s.png"/>
+                        </div>
+                        <h3 className="text-xl font-semibold text-gray-600 mb-4">Anbernic (H700)</h3>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            <DeviceCard name="RG28XX" imageUrl="/images/anbernic-rg28xx.jpg"/>
+                            <DeviceCard name="RG34XX" imageUrl="/images/anbernic-rg34xx.jpg"/>
+                            <DeviceCard name="RG34XX SP" imageUrl="/images/anbernic-rg34xx-sp.jpg"/>
+                            <DeviceCard name="RG35XX+ / RG35XX 2024" imageUrl="/images/anbernic-rg35xx-plus.jpg"/>
+                            <DeviceCard name="RG35XX Pro" imageUrl="/images/anbernic-rg35xx-pro.jpg"/>
+                            <DeviceCard name="RG35XX SP" imageUrl="/images/anbernic-rg35xx-sp.jpg"/>
+                            <DeviceCard name="RG35XX H" imageUrl="/images/anbernic-rg35xx-h.jpg"/>
+                            <DeviceCard name="RG40XX H" imageUrl="/images/anbernic-rg40xx-h.jpg"/>
+                            <DeviceCard name="RG40XX V" imageUrl="/images/anbernic-rg40xx-v.jpg"/>
+                            <DeviceCard name="RG Cube XX" imageUrl="/images/anbernic-rg-cube-xx.jpg"/>
+                            <DeviceCard name="RG SP" imageUrl="/images/anbernic-rg-sp.jpg"/>
                         </div>
                     </div>
                 </section>
@@ -179,12 +193,14 @@ function FeatureCard({icon, title, description, imageUrl}) {
     )
 }
 
-function DeviceCard({name, imageUrl, width}) {
+function DeviceCard({name, imageUrl}) {
     return (
-        <div className="text-center items-end">
-            <Image src={imageUrl || "/placeholder.svg"} alt={name} width={width} height={0} className="mx-auto mb-4"/>
-            <h3 className="text-xl font-semibold">{name}</h3>
+        <div className="w-40 bg-white rounded-lg shadow-sm p-3 flex flex-col items-center">
+            <div className="h-28 w-full flex items-center justify-center">
+                <Image src={imageUrl || "/placeholder.svg"} alt={name} width={160} height={112}
+                       className="max-h-28 w-auto h-auto object-contain"/>
+            </div>
+            <h4 className="mt-2 text-sm font-semibold leading-tight">{name}</h4>
         </div>
     )
 }
-

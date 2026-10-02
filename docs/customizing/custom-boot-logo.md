@@ -15,10 +15,16 @@ SD_CARD
 │   │       │   └── your_logo.bmp            *For Brick and Brick Hammer devices - Add your IMAGE here
 │   │       └── smartpro/
 │   │           └── your_logo.bmp            *For Smart Pro devices - Add your IMAGE here
-│   └── tg5050/
-│       └── Bootlogo.pak/
-│           └── smartpro_s/
-│               └── your_logo.bmp            *For Smart Pro S devices - Add your IMAGE here
+│   ├── tg5050/
+│   |   └── Bootlogo.pak/
+│   |       └── smartpro_s/
+│   |           └── your_logo.bmp            *For Smart Pro S devices - Add your IMAGE here
+|   └── h700/
+|       └── Bootlogo.pak/
+|           ├── 640x480/                     *Folders by screen resolution, add your IMAGE to the one matching your device
+|           ├── 720x480/
+|           ├── 480x640/
+|           └── 720x720/
 ```
 
 ## Recommended Specs

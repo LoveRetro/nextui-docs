@@ -67,7 +67,7 @@ Examples:
 | SUPA (mednafen_supafaust) | `.userdata/shared/SUPA-mednafen_supafaust` | `.userdata/<platform>/SUPA-mednafen_supafaust` |
 | PCE (mednafen_pce_fast) | `.userdata/shared/PCE-mednafen_pce_fast` | `.userdata/<platform>/PCE-mednafen_pce_fast` |
 
-Replace `<platform>` with `tg5040` for Trimui Smart Pro / Brick, or `tg5050` for Trimui Smart Pro S.
+Replace `<platform>` with `tg5040` for Trimui Smart Pro / Brick, `tg5050` for Trimui Smart Pro S, or `h700` for Anbernic RG XX.
 
 NextUI also stores launcher resume metadata and preview images under:
 

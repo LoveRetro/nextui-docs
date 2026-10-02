@@ -13,6 +13,7 @@ The top-level Makefile chooses the path from the target platform: `desktop` uses
 |---|---|
 | `tg5040` | Trimui Smart Pro / Brick |
 | `tg5050` | Trimui Smart Pro S |
+| `h700` | Anbernic RG XX (H700) devices |
 | `desktop` | Native host debug build |
 
 ## Host requirements

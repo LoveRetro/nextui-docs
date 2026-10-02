@@ -22,9 +22,11 @@ For a normal update on an SD card that already runs NextUI, you only need to cop
 10. Wait while the NextUI update screen runs. Do not power off the device during the update.
 11. When the update completes, the device can shut down. Power it on again.
 
-## When you also need to recopy the `trimui/` folder
+## When you also need to recopy the `trimui/` folder (TrimUI only)
 
-Most normal updates do **not** require recopying `trimui/`. Copy the current release's `trimui/` folder back to the SD-card root only when:
+Anbernic RG XX (H700) devices have no `trimui/` folder; for them, updating is always just copying `MinUI.zip`.
+
+Most normal updates on TrimUI devices do **not** require recopying `trimui/`. Copy the current release's `trimui/` folder back to the SD-card root only when:
 
 - you are doing a fresh install on a new or reformatted card;
 - the device boots to the stock TrimUI OS instead of NextUI;
@@ -40,6 +42,7 @@ Settings, saves, ROMs, BIOS files, artwork, and Paks live on the SD card. Device
 ```text
 .userdata/tg5040/
 .userdata/tg5050/
+.userdata/h700/
 ```
 
-When first using the card on another supported TrimUI device, copy the current release's `trimui/` folder to the SD-card root and keep `MinUI.zip` available so the installer can perform a repair/update pass.
+When first using the card on another supported TrimUI device (or switching between TrimUI and Anbernic), copy the current release's `trimui/` folder to the SD-card root and keep `MinUI.zip` available so the installer can perform a repair/update pass.

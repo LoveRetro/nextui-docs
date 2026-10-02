@@ -3,15 +3,28 @@
 !!! warning "Read before continuing!"
 
     NextUI **officially supports** 
-    - TrimUI Brick (and Hammer, which is functionally the same)
-    - TrimUI Smart Pro
-    - TrimUI Smart Pro S
-    - TrimUI Brick Pro
+    - TrimUI 
+        - Brick (and Hammer, which is functionally the same)
+        - Smart Pro
+        - Smart Pro S
+        - Brick Pro
+    - Anbernic RG XX (H700) devices:
+        - RG28XX
+        - RG34XX
+        - RG34XX SP
+        - RG35XX+ and RG35XX 2024
+        - RG35XX Pro
+        - RG35XX SP
+        - RG35XX H
+        - RG40XX H
+        - RG40XX V
+        - RG Cube XX
+        - RG SP
 
     The steps outlined here only apply to these supported devices running the stock operating system.
 
     If you are planning to install NextUI after using a different custom firmware on your device,
-    we recommend to first reinstall the TrimUI stock OS to revert any changes that might have been
+    we recommend to first reinstall the stock OS of your device to revert any changes that might have been
     made without your knowledge. The only exception is MinUI.
 
 

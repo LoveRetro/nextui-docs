@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
     title: 'NextUI',
-    description: 'A powerful CFW for TrimUI Brick and Smart Pro',
+    description: 'A powerful CFW for TrimUI and Anbernic handhelds',
 }
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode }>) {

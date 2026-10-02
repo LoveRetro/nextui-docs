@@ -11,6 +11,7 @@ All supported devices have configurable LEDs. Use the LED Control app from Tools
 | Trimui Brick | F1 key, F2 key, top bar, L/R trigger LEDs | `.userdata/shared/ledsettings_brick.txt` |
 | Trimui Smart Pro | Left stick, right stick, TrimUI logo | `.userdata/shared/ledsettings.txt` |
 | Trimui Smart Pro S | Left stick, right stick, TrimUI logo | `.userdata/shared/ledsettings.txt` |
+| Anbernic RG XX (H700) | Varies by model | `.userdata/shared/ledsettings_h700.txt` |
 
 ## LED Control app
 

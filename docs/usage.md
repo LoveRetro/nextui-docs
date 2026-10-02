@@ -4,7 +4,7 @@
 
 ## What you need
 
-- A supported device: TrimUI Brick, TrimUI Smart Pro, or TrimUI Smart Pro S.
+- A supported device: a TrimUI Brick, Brick Pro, Smart Pro, or Smart Pro S, or an Anbernic RG XX (H700) device. See [Prerequisites](getting-started/index.md) for the full list.
 - A microSD card from a reputable vendor.
 - A computer that can extract `.zip` files and copy files to the SD card.
 - The latest NextUI release archive ending in `-base.zip` or `-all.zip` from the [GitHub releases page]({{ urls.github }}/releases).

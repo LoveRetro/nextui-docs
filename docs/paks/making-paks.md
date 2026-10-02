@@ -15,6 +15,7 @@ Paks are platform-specific. Use the platform folders from the current extras bun
 |---|---|---|---|
 | Trimui Smart Pro / Brick | `tg5040` | `Tools/tg5040/` | `Emus/tg5040/` |
 | Trimui Smart Pro S | `tg5050` | `Tools/tg5050/` | `Emus/tg5050/` |
+| Anbernic RG XX (H700) | `h700` | `Tools/h700/` | `Emus/h700/` |
 
 !!! warning
     Do not place community or custom Paks in `.system/`. That folder is replaced during updates.
@@ -67,7 +68,7 @@ Pak launch scripts receive these environment variables:
 
 | Variable | Description |
 |---|---|
-| `$PLATFORM` | Device platform, e.g. `tg5040` for Trimui Smart Pro / Brick or `tg5050` for Trimui Smart Pro S |
+| `$PLATFORM` | Device platform, e.g. `tg5040` for Trimui Smart Pro / Brick, `tg5050` for Trimui Smart Pro S, or `h700` for Anbernic RG XX. On `h700`, the `$DEVICE` env var holds the exact model |
 | `$DEVICE` | Device identifier |
 | `$SDCARD_PATH` | Path to SD card root |
 | `$LOGS_PATH` | Path to log directory |

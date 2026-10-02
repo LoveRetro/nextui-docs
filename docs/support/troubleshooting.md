@@ -20,7 +20,8 @@ Check:
 1. The SD card uses Master Boot Record (MBR), not GPT.
 2. The card is FAT32 or exFAT.
 3. `MinUI.zip` is on the SD-card root and is still zipped.
-4. The `trimui/` folder from the release is on the SD-card root.
+4. TrimUI: the `trimui/` folder from the release is on the SD-card root.
+   Anbernic: `dmenu.bin` is on the ROMS partition of the stock OS card, and the stock OS theme is set to "old style".
 5. You did not copy the release folder one level too deep.
 6. The SD card was safely ejected after copying files.
 7. Try a different SD card if settings are not saving or files keep corrupting.

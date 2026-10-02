@@ -15,7 +15,7 @@ Check:
 
 If the Pak does not support your device, it will not work until the Pak author adds support.
 
-Smart Pro S users should check compatibility carefully because older Paks can support only earlier TrimUI devices.
+Smart Pro S and Anbernic users should check compatibility carefully because older Paks can support only earlier TrimUI devices.
 
 ## Tool Pak installed but does not appear
 
@@ -29,6 +29,7 @@ Tool Paks for each device:
 |---|---|
 | Trimui Smart Pro / Brick | `Tools/tg5040/` |
 | Trimui Smart Pro S | `Tools/tg5050/` |
+| Anbernic RG XX (H700) | `Tools/h700/` |
 
 ## Emulator Pak installed but no games show
 
