@@ -2,6 +2,8 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DkqziZgLmQI?si=GolnCAwV55WVXI-x" title="NextUI complete setup guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R2a9jgh22bg?si=qG5XAC3UdZGBbj7a" title="NextUI on Anbernic H700" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## What you need
 
 - A supported device: a TrimUI Brick, Brick Pro, Smart Pro, or Smart Pro S, or an Anbernic RG XX (H700) device. See [Prerequisites](getting-started/index.md) for the full list.
