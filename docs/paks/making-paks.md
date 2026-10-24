@@ -71,6 +71,7 @@ Pak launch scripts receive these environment variables:
 | `$PLATFORM` | Device platform, e.g. `tg5040` for Trimui Smart Pro / Brick, `tg5050` for Trimui Smart Pro S, or `h700` for Anbernic RG XX. On `h700`, the `$DEVICE` env var holds the exact model |
 | `$DEVICE` | Device identifier |
 | `$SDCARD_PATH` | Path to SD card root |
+| `$SYSTEM_PATH` | Path to the platform's system folder (`.system/<platform>`) |
 | `$LOGS_PATH` | Path to log directory |
 | `$EMU_TAG` | Emulator tag from folder name |
 | `$ROM` | Path to the ROM file |
@@ -108,6 +109,28 @@ Tell users clearly if your Pak does not support:
 ## Brightness and volume
 
 Some standalone programs reset brightness or volume. NextUI includes `syncsettings.elf` for Pak authors who need to restore global settings around a launched binary.
+
+## CPU governor
+
+For compatibility with MinUI, NextUI switches the CPU governor to `performance` before launching any Pak and resets it when the Pak exits.
+
+Emulator Paks that use `minarch.elf` don't need to do anything: minarch applies the user's CPU speed setting itself. Tools and standalone programs, however, will run at full clock speed the whole time, which may drain the battery and heat the device for no benefit.
+
+If your Pak doesn't need full performance, switch the governor in `launch.sh` using NextUI's `governor.sh`:
+
+```sh
+if [ -f "${SYSTEM_PATH:-}/bin/governor.sh" ]; then
+    sh "$SYSTEM_PATH/bin/governor.sh" powersave || echo "governor.sh failed, continuing" >&2
+fi
+```
+
+| Mode | Description |
+|---|---|
+| `auto` | Scales frequency with load. Good default for most Paks |
+| `powersave` | Scales frequency with load, capped at roughly half the maximum. Best for menus, file browsers and other light tools |
+| `performance` | Locked at maximum frequency. The default for Paks |
+
+There's no need to restore the governor when your Pak exits; NextUI resets it automatically.
 
 ## Community Resources
 
