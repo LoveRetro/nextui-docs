@@ -157,7 +157,7 @@ export default function Page() {
             <footer className="bg-gray-950 text-white text-lg py-8">
                 <div className="container mx-auto px-4 text-center">
                     <p className="mb-2">
-                        &copy; 2025 Next<span className="text-[#9B2256] font-bold">UI</span> Contributors
+                        &copy; 2026 Next<span className="text-[#9B2256] font-bold">UI</span> Contributors
                     </p>
                     <span className="font-semibold">
                         A <a href="https://github.com/LoveRetro" target="_blank"><span
