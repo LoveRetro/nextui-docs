@@ -57,7 +57,7 @@ mkdir -p "$CHEATS_PATH/$EMU_TAG"
 
 HOME="$USERDATA_PATH"
 cd "$HOME"
-minarch.elf "$CORES_PATH/${EMU_EXE}_libretro.so" "$ROM" &> "$LOGS_PATH/$EMU_TAG.txt"
+minarch.elf "$CORES_PATH/${EMU_EXE}_libretro.so" "$ROM" > "$LOGS_PATH/$EMU_TAG.txt" 2>&1
 ```
 
 If the core is bundled inside your Pak, set `CORES_PATH` to the Pak folder.
