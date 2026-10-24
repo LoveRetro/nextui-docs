@@ -188,7 +188,7 @@ For FBNeo:
 * Use a folder ending in `(FBN)`, such as `Roms/Arcade (FBN)/` or `Roms/Neo Geo (FBN)/`.
 * Keep arcade ZIP filenames unchanged, such as `mslug.zip`.
 * Do not rename ZIPs for readability; use `map.txt` for display names.
-* Use ROMs from a set that matches the FBNeo version included with NextUI.
+* Use ROMs from a set that matches the FBNeo version included with NextUI (see [Which ROM set to use](#which-rom-set-to-use)).
 * If FBNeo reports an unknown or wrong ROM set, the folder may be correct but the ROM set may not match.
 
 Example layout:
@@ -220,6 +220,18 @@ Some arcade games require sample ZIPs for sound effects. Place samples here:
 ```text
 Bios/FBN/fbneo/samples/dkong.zip
 ```
+
+### Which ROM set to use
+
+FBNeo does not use MAME ROM sets. Build your set against the FBNeo DAT that matches the FBNeo version in NextUI:
+
+1. Find the FBNeo commit NextUI is built with: it is the `fbneo_HASH` value in the [NextUI cores makefile](https://github.com/LoveRetro/NextUI/blob/main/workspace/tg5040/cores/makefile) (pick the tag matching your NextUI release if you are not on the latest).
+2. Open the FBNeo `dats` folder at that commit, `https://github.com/libretro/FBNeo/tree/<fbneo_HASH>/dats`, and download the DAT you need, such as `FinalBurn Neo (ClrMame Pro XML, Arcade only).dat`.
+3. Rebuild your ZIPs against that DAT with a ROM manager such as ClrMamePro or RomVault. Non-merged sets are the simplest, because each ZIP contains everything its game needs.
+
+To check the version on the device, see the `version:` line in `.userdata/<platform>/logs/FBN.txt`. It is written even when a game fails to load.
+
+See [Building romsets for FBNeo](https://docs.libretro.com/library/fbneo/#building-romsets-for-fbneo) in the libretro docs for a detailed walkthrough.
 
 ## Games not showing
 
